@@ -20,10 +20,25 @@ final class TranslationText {
     static List<Span> split(String value){ArrayList<Span> parts=new ArrayList<>();int start=0,current=0;for(int i=0;i<value.length();){int cp=value.codePointAt(i),group=group(cp);if(group!=0){if(current!=0&&current!=group){parts.add(new Span(value.substring(start,i),current));start=i;}current=group;}i+=Character.charCount(cp);}if(start<value.length())parts.add(new Span(value.substring(start),current));return parts;}
     static String onlyGroup(String context,int group){StringBuilder result=new StringBuilder();for(int i=0;i<context.length();){int cp=context.codePointAt(i);int kind=group(cp);result.appendCodePoint(kind==0||kind==group?cp:' ');i+=Character.charCount(cp);}return result.toString();}
     static int end(String text,int start,int limit){int newline=text.indexOf('\n',start);if(newline>=start&&newline<limit)limit=newline+1;return SpeechSegmenter.end(text,start,limit);}
+    private static boolean separatorDash(char value){
+        return "-‐‑‒–—―−﹣－".indexOf(value)>=0;
+    }
     // Preserve UTF-16 offsets so spoken ranges still map to the original book.
     static String speechText(String text){
         StringBuilder out=new StringBuilder(text.length());
-        for(int at=0;at<text.length();){int cp=text.codePointAt(at),width=Character.charCount(cp),type=Character.getType(cp);
+        for(int at=0;at<text.length();){
+            if(separatorDash(text.charAt(at))){
+                int end=at+1;
+                while(end<text.length()&&separatorDash(text.charAt(end)))end++;
+                if(end-at>=3){
+                    while(at<end){out.append(' ');at++;}
+                    continue;
+                }
+                out.append(text,at,end);
+                at=end;
+                continue;
+            }
+            int cp=text.codePointAt(at),width=Character.charCount(cp),type=Character.getType(cp);
             boolean skip=type==Character.CONTROL||type==Character.FORMAT||type==Character.PRIVATE_USE||type==Character.SURROGATE||type==Character.UNASSIGNED||type==Character.OTHER_SYMBOL||cp==0xfffd;
             if(skip){for(int n=0;n<width;n++)out.append(' ');}else out.appendCodePoint(cp);at+=width;
         }return out.toString();

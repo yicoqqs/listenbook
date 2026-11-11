@@ -188,23 +188,61 @@ public class MainActivity extends Activity {
         if(position>=text.length()){stop();position=0;showPosition(true);save();setReaderStatus(getString(R.string.ui_70));return;}
         final int repeatChapter=loopPlayback?chapter:-1;
         ArrayList<String> lines=new ArrayList<>();ArrayList<Integer> starts=new ArrayList<>(),ends=new ArrayList<>();
-        for(Chapter readable:chapters){if(repeatChapter>=0&&readable!=chapters.get(repeatChapter))continue;for(int at=Math.max(position,readable.start);at<readable.end;){while(at<readable.end&&Character.isWhitespace(text.charAt(at)))at++;if(at>=readable.end)break;int end=readingLanguage.isEmpty()?nextSpeechEnd(text,at,readable.end):TranslationText.end(text,at,readable.end);if(!usesSystem()&&lines.isEmpty())end=SpeechSegmenter.firstEnd(text,at,end);if(!TranslationText.speakable(text.substring(at,end))){at=end;continue;}String speech=readingLanguage.isEmpty()?TranslationText.speechText(text.substring(at,end)):text.substring(at,end);if(!TranslationText.speakable(speech)){at=end;continue;}lines.add(speech);starts.add(at);ends.add(end);at=end;}}
+        for(Chapter readable:chapters){if(repeatChapter>=0&&readable!=chapters.get(repeatChapter))continue;for(int at=Math.max(position,readable.start);at<readable.end;){while(at<readable.end&&Character.isWhitespace(text.charAt(at)))at++;if(at>=readable.end)break;int end=readingLanguage.isEmpty()?nextSpeechEnd(text,at,readable.end):TranslationText.end(text,at,readable.end);if(!usesSystem()&&lines.isEmpty())end=SpeechSegmenter.firstEnd(text,at,end);String speech=TranslationText.speechText(text.substring(at,end));if(!TranslationText.speakable(speech)){at=end;continue;}lines.add(speech);starts.add(at);ends.add(end);at=end;}}
         if(lines.isEmpty()){stop();setReaderStatus(getString(R.string.ui_71));return;}
         timing.planningMs=SystemClock.elapsedRealtime()-planningAt;activeUtterance=generation+":continuous";final String id=activeUtterance;
-        if(readingLanguage.isEmpty()){setReaderStatus(getString(R.string.ui_72));playOriginalSequence(id,lines,starts,ends,repeatChapter,0);return;}
+        if(readingLanguage.isEmpty()){setReaderStatus(getString(R.string.ui_72));playOriginalSequence(id,lines,starts,ends,repeatChapter,0,false,new HashSet<>());return;}
         final OfflineTranslation.Session session=translation.session(lines,readingLanguage,text,starts);translatedSession=session;setReaderStatus(getString(R.string.translation_identifying));
         final long translationAt=SystemClock.elapsedRealtime();translation.inspect(session,new OfflineTranslation.Inspection(){public void ready(){runOnUiThread(()->{if(valid(id)&&translatedSession==session){timing.translationMs=SystemClock.elapsedRealtime()-translationAt;setReaderStatus(getString(R.string.ui_72));playSpokenSequence(id,session,starts,ends,repeatChapter);}});}public void failed(Throwable error){runOnUiThread(()->{if(valid(id))translationFailure(error);});}});
     }
-    void playSpokenSequence(String id,List<String> spoken,List<Integer> starts,List<Integer> ends,int repeatChapter){playSpokenSequence(id,spoken,starts,ends,repeatChapter,()->finishPlayback(id,repeatChapter));}
-    void playSpokenSequence(String id,List<String> spoken,List<Integer> starts,List<Integer> ends,int repeatChapter,Runnable completed){
+    void playSpokenSequence(String id,List<String> spoken,List<Integer> starts,List<Integer> ends,int repeatChapter){playSpokenSequence(id,spoken,starts,ends,spoke->finishPlayback(id,spoke ? repeatChapter : -1),Collections.emptySet());}
+    void playSpokenSequence(String id,List<String> spoken,List<Integer> starts,List<Integer> ends,java.util.function.Consumer<Boolean> completed,Set<String> failedPackages){
         final SpeechStartupTiming timing=startupTiming==null?new SpeechStartupTiming():startupTiming;
-        if(usesSystem()){if(cast!=null&&cast.device!=null){stop();setReaderStatus(getString(R.string.cast_imported_required));return;}SystemSpeaker.Option option=system.find(systemVoiceKey);if(option==null){stop();toast(getString(R.string.ui_73));return;}system.speak(spoken,option,rate,new SystemSpeaker.Listener(){public void sentence(int index){if(speechSentence(id,starts.get(index),ends.get(index)))setReaderStatus(readingStatus(getString(R.string.ui_74)));}public void range(int index,int start,int end){if(readingLanguage.isEmpty()&&valid(id)){position=starts.get(index)+start;showPosition(false);highlight(position,starts.get(index)+end);updateProgress();}}public void done(){if(valid(id))completed.run();}public void failed(){failed(new IOException(getString(R.string.ui_75)));}public void failed(Throwable error){if(valid(id)){if(!readingLanguage.isEmpty())translationFailure(error);else{stop();setReaderStatus(getString(R.string.ui_75));}}}});return;}
-        final long waitingAt=SystemClock.elapsedRealtime();final boolean warmed=offline instanceof PackageSpeaker&&((PackageSpeaker)offline).ready&&((PackageSpeaker)offline).key.equals(systemVoiceKey)&&((PackageSpeaker)offline).language.equals(voiceLanguage());prepareImported(systemVoiceKey,voiceLanguage(),()->{if(!valid(id))return;timing.warmModel=warmed;timing.modelWaitMs=SystemClock.elapsedRealtime()-waitingAt;timing.modelInitMs=((PackageSpeaker)offline).loadMillis;offline.cast=cast;offline.speakSequence(spoken,0,rate,new OfflineSpeaker.SequenceListener(){public void buffering(int ready){if(valid(id))setReaderStatus(getString(R.string.buffer_count,ready));}public void sentence(int index){if(speechSentence(id,starts.get(index),ends.get(index)))setReaderStatus(readingStatus(getString(R.string.vp_reading)));}public void done(){if(valid(id))completed.run();}public void failed(Throwable error){if(valid(id)){if(cast!=null&&cast.device!=null){stop(false);if(PlaybackService.active!=null)PlaybackService.active.parkPaused();cast.playbackFailed(error);setReaderStatus(getString(R.string.cast_playback_failed));}else if(!readingLanguage.isEmpty())translationFailure(error);else{stop();setReaderStatus(getString(R.string.vp_error_invalid));}}}},timing);},error->{if(valid(id)){stop();setReaderStatus(getString(R.string.vp_error_invalid));}});
+        if(usesSystem()){if(cast!=null&&cast.device!=null){stop();setReaderStatus(getString(R.string.cast_imported_required));return;}SystemSpeaker.Option option=system.find(systemVoiceKey);if(option==null){stop();toast(getString(R.string.ui_73));return;}system.speak(spoken,option,rate,new SystemSpeaker.Listener(){public void sentence(int index){if(speechSentence(id,starts.get(index),ends.get(index)))setReaderStatus(readingStatus(getString(R.string.ui_74)));}public void range(int index,int start,int end){if(readingLanguage.isEmpty()&&valid(id)){position=starts.get(index)+start;showPosition(false);highlight(position,starts.get(index)+end);updateProgress();}}public void done(){if(valid(id))completed.accept(true);}public void failed(){failed(new IOException(getString(R.string.ui_75)));}public void failed(Throwable error){if(valid(id)){if(!readingLanguage.isEmpty())translationFailure(error);else{stop();setReaderStatus(getString(R.string.ui_75));}}}});return;}
+        final String key=systemVoiceKey;final long waitingAt=SystemClock.elapsedRealtime();final boolean warmed=offline instanceof PackageSpeaker&&((PackageSpeaker)offline).ready&&((PackageSpeaker)offline).key.equals(systemVoiceKey)&&((PackageSpeaker)offline).language.equals(voiceLanguage());prepareImported(key,voiceLanguage(),()->{if(!valid(id))return;int preparedBefore=timing.preparedClips;timing.warmModel=warmed;timing.modelWaitMs=SystemClock.elapsedRealtime()-waitingAt;timing.modelInitMs=((PackageSpeaker)offline).loadMillis;offline.cast=cast;offline.speakSequence(spoken,0,rate,new OfflineSpeaker.SequenceListener(){public void buffering(int ready){if(valid(id))setReaderStatus(getString(R.string.buffer_count,ready));}public void sentence(int index){if(speechSentence(id,starts.get(index),ends.get(index)))setReaderStatus(readingStatus(getString(R.string.vp_reading)));}public void done(){if(valid(id))completed.accept(timing.preparedClips>preparedBefore);}public void failed(Throwable error){if(valid(id)){if(cast!=null&&cast.device!=null){stop(false);if(PlaybackService.active!=null)PlaybackService.active.parkPaused();cast.playbackFailed(error);setReaderStatus(getString(R.string.cast_playback_failed));}else if(!readingLanguage.isEmpty())translationFailure(error);else{stop();setReaderStatus(getString(R.string.vp_error_invalid));}}}},timing);},error->{
+            if(!valid(id))return;
+            android.util.Log.w("VoiceTxtOffline","Cannot load reading voice "+key,error);
+            if(readingLanguage.isEmpty()){
+                failedPackages.add(key);
+                completed.accept(false);
+            }else{
+                stop();
+                setReaderStatus(getString(R.string.vp_error_invalid));
+            }
+        });
     }
-    void playOriginalSequence(String id,List<String> lines,List<Integer> starts,List<Integer> ends,int repeatChapter,int from){
-        if(!valid(id))return;if(from>=lines.size()){finishPlayback(id,repeatChapter);return;}
+    void playOriginalSequence(String id,List<String> lines,List<Integer> starts,List<Integer> ends,int repeatChapter,int from,boolean spoke,Set<String> failedPackages){
+        if(!valid(id))return;if(from>=lines.size()){finishPlayback(id,spoke ? repeatChapter : -1);return;}
         if(originalPlanner==null)originalPlanner=new OriginalVoicePlanner(translation.identifier);final OriginalVoicePlanner planner=originalPlanner;final String previous=voiceLanguage();setReaderStatus(getString(R.string.translation_identifying));
-        translation.analysis.execute(()->{try{OriginalVoicePlanner.Batch batch=planner.plan(lines,from,previous,()->valid(id));runOnUiThread(()->{if(!valid(id))return;position=starts.get(from);if(!batch.language.equals(originalVoiceLanguage)){originalVoiceLanguage=batch.language;systemVoiceKey=readingPrefs.getString(readingVoicePreference(batch.language),"");}if(!ensureReadingVoice()){stop(false);if(PlaybackService.active!=null)PlaybackService.active.parkPaused();setReaderStatus(getString(R.string.voice_language_missing)+" · "+readingLanguageName(batch.language));showPosition(false);return;}playSpokenSequence(id,lines.subList(from,batch.end),starts.subList(from,batch.end),ends.subList(from,batch.end),repeatChapter,()->playOriginalSequence(id,lines,starts,ends,repeatChapter,batch.end));});}catch(java.util.concurrent.CancellationException ignored){}catch(Throwable error){runOnUiThread(()->{if(valid(id)){position=starts.get(from);stop(false);if(PlaybackService.active!=null)PlaybackService.active.parkPaused();showPosition(false);setReaderStatus(getString(R.string.vp_original_unknown));}});}});
+        translation.analysis.execute(()->{
+            try{
+                OriginalVoicePlanner.Batch batch=planner.plan(lines,from,previous,()->valid(id));
+                runOnUiThread(()->{
+                    if(!valid(id))return;
+                    position=starts.get(from);
+                    if(!batch.language.equals(originalVoiceLanguage)){
+                        originalVoiceLanguage=batch.language;
+                        systemVoiceKey=readingPrefs.getString(readingVoicePreference(batch.language),"");
+                    }
+                    if(!ensureReadingVoice()||failedPackages.contains(systemVoiceKey)){
+                        playOriginalSequence(id,lines,starts,ends,repeatChapter,batch.end,spoke,failedPackages);
+                        return;
+                    }
+                    playSpokenSequence(id,lines.subList(from,batch.end),starts.subList(from,batch.end),
+                        ends.subList(from,batch.end),
+                        played->playOriginalSequence(id,lines,starts,ends,repeatChapter,batch.end,spoke||played,failedPackages),failedPackages);
+                });
+            }catch(java.util.concurrent.CancellationException ignored){}catch(Throwable error){
+                runOnUiThread(()->{
+                    if(!valid(id))return;
+                    position=starts.get(from);
+                    stop(false);
+                    if(PlaybackService.active!=null)PlaybackService.active.parkPaused();
+                    showPosition(false);
+                    setReaderStatus(getString(R.string.vp_original_unknown));
+                });
+            }
+        });
     }
     boolean speechSentence(String id,int start,int end){if(!valid(id))return false;if(pendingVoiceChange!=null&&pendingVoiceChange.ready&&pendingVoiceChange.language.equals(voiceLanguage())&&start>pendingVoiceChange.requestedAt){commitVoiceChange(start,true);return false;}position=start;showPosition(false);highlight(start,end);save();return true;}
     void cancelVoiceChange(){VoiceChange pending=pendingVoiceChange;pendingVoiceChange=null;if(pending!=null&&pending.prepared!=null&&pending.prepared!=offline)pending.prepared.close();}

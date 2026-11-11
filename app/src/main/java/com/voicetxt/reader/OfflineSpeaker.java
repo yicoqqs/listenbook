@@ -77,11 +77,22 @@ class OfflineSpeaker {
         java.util.concurrent.atomic.AtomicReference<Throwable> failure=new java.util.concurrent.atomic.AtomicReference<>();
         worker.execute(()->{try{for(int i=0;i<sentences.size()&&current(request);i++){
             long began=SystemClock.elapsedRealtime();startup.begin(began);String value=sentences.get(i);if(!current(request))break;startup.textReady(value.length());
-            long synthesisAt=SystemClock.elapsedRealtime();GeneratedAudio data=generate(value,voice,speed,new CancelCallback(this,request));if(!current(request))break;
+            long synthesisAt=SystemClock.elapsedRealtime();
+            GeneratedAudio data;
+            try{
+                data=generate(value,voice,speed,new CancelCallback(this,request));
+            }catch(java.util.concurrent.CancellationException cancelled){
+                throw cancelled;
+            }catch(RuntimeException error){
+                if(!current(request))break;
+                android.util.Log.w("VoiceTxtOffline","Skipping failed synthesis segment index="+i,error);
+                continue;
+            }
+            if(!current(request))break;
             long generated=SystemClock.elapsedRealtime(),synthesis=generated-synthesisAt;lastSynthesisMs=synthesis;
             float[] values=data.getSamples();if(values.length==0){android.util.Log.w("VoiceTxtOffline","Skipping unsynthesizable segment index="+i);continue;}short[] pcm=new short[values.length];for(int j=0;j<pcm.length;j++)pcm[j]=(short)(Math.max(-1f,Math.min(1f,values[j]))*32767);
             long duration=(long)pcm.length*1000/data.getSampleRate();timing.synthesisMs+=synthesis;timing.preparedAudioMs+=duration;timing.preparedClips++;
-            if(i==0){timing.firstChunkMs=generated-began;timing.firstSynthesisMs=synthesis;timing.firstTextMs=synthesisAt-began;timing.firstPreparedAt=generated;}
+            if(timing.firstPreparedAt==0){timing.firstChunkMs=generated-began;timing.firstSynthesisMs=synthesis;timing.firstTextMs=synthesisAt-began;timing.firstPreparedAt=generated;}
             startup.prepared(value.length(),generated-began,duration,generated);
             Clip clip=new Clip(i,data.getSampleRate(),pcm);while(current(request)&&!queue.offer(clip,250,TimeUnit.MILLISECONDS)){}
             final int ready=queue.size();if(i<3)main.post(()->{if(current(request)&&timing.audioStartedAt==0)listener.buffering(ready);});
