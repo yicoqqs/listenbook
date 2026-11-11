@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"Nhập tệp"</string>
+    <string name="vp_address">"Tải từ URL"</string>
+    <string name="vp_hint">"Gói sherpa-onnx VITS / Kokoro hoặc Matcha đầy đủ (.zip, .tar.bz2, .tar.gz, .tar). Kiểm tra ngôn ngữ và tệp cần thiết. Chỉ tệp .pt hoặc .onnx là chưa đủ."</string>
+    <string name="vp_extract">"Đang giải nén gói giọng nói…"</string>
+    <string name="vp_validate">"Đang kiểm tra ngôn ngữ và thử mô hình…"</string>
+    <string name="vp_done">"Gói giọng nói đã sẵn sàng"</string>
+    <string name="vp_error_language">"Gói không hợp lệ: ngôn ngữ không khớp."</string>
+    <string name="vp_error_unknown">"Gói không hợp lệ: không thể xác minh ngôn ngữ mô hình."</string>
+    <string name="vp_error_invalid">"Gói không hợp lệ hoặc không được hỗ trợ. Hãy dùng gói VITS / Kokoro hoặc Matcha tương thích."</string>
+    <string name="vp_error_incomplete">"Gói không hợp lệ: thiếu tệp mô hình hoặc từ điển cần thiết."</string>
+    <string name="vp_error_duplicate">"Gói giọng nói này đã được nhập."</string>
+    <string name="vp_error_storage">"Không đủ bộ nhớ hoặc gói quá lớn."</string>
+    <string name="vp_error_url">"Nhập liên kết HTTPS trực tiếp đến gói đầy đủ."</string>
+    <string name="vp_cancelled">"Đã hủy nhập"</string>
+    <string name="vp_speaker">"Giọng %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"Xóa gói này và tất cả giọng nói của gói khỏi ứng dụng?"</string>
+    <string name="vp_source">"Gói giọng nói đã nhập"</string>
+    <string name="vp_title">"Chọn giọng đọc"</string>
+    <string name="vp_reading">"Đọc bằng giọng ngoại tuyến"</string>
+    <string name="vp_in_use">"Gói đang được sử dụng. Thoát màn hình đọc hoặc dừng nghe thử trước khi xóa."</string>
+    <string name="vp_deleted">"Đã xóa gói giọng nói"</string>
+    <string name="vp_auto">"Ngôn ngữ được nhận diện tự động sau khi nhập. Gói đa ngôn ngữ chỉ được lưu một lần."</string>
+    <string name="vp_error_graph">"Kiểu dữ liệu nội bộ của mô hình không tương thích. Hãy thử phiên bản khác, chẳng hạn gói không dùng FP16."</string>
+    <string name="vp_copy_url">"Sao chép liên kết tải gói giọng nói"</string>
+</resources>

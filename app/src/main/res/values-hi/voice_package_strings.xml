@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"फ़ाइल आयात करें"</string>
+    <string name="vp_address">"URL से डाउनलोड करें"</string>
+    <string name="vp_hint">"पूर्ण sherpa-onnx VITS / Kokoro या Matcha पैकेज (.zip, .tar.bz2, .tar.gz, .tar)। भाषा और फ़ाइलें जाँची जाएँगी। अकेली .pt या .onnx फ़ाइल पर्याप्त नहीं है।"</string>
+    <string name="vp_extract">"आवाज़ पैकेज निकाला जा रहा है…"</string>
+    <string name="vp_validate">"भाषा की जाँच और मॉडल का परीक्षण हो रहा है…"</string>
+    <string name="vp_done">"आवाज़ पैकेज तैयार है"</string>
+    <string name="vp_error_language">"अमान्य पैकेज: भाषा चयनित भाषा से मेल नहीं खाती।"</string>
+    <string name="vp_error_unknown">"अमान्य पैकेज: मॉडल की भाषा सत्यापित नहीं हो सकी।"</string>
+    <string name="vp_error_invalid">"अमान्य या असमर्थित पैकेज। संगत VITS / Kokoro या Matcha पैकेज उपयोग करें।"</string>
+    <string name="vp_error_incomplete">"अमान्य पैकेज: आवश्यक मॉडल या शब्दकोश फ़ाइलें नहीं हैं।"</string>
+    <string name="vp_error_duplicate">"यह आवाज़ पैकेज पहले ही आयात हो चुका है।"</string>
+    <string name="vp_error_storage">"स्टोरेज कम है या पैकेज बहुत बड़ा है।"</string>
+    <string name="vp_error_url">"पूर्ण पैकेज का सीधा HTTPS लिंक दर्ज करें।"</string>
+    <string name="vp_cancelled">"आयात रद्द किया गया"</string>
+    <string name="vp_speaker">"आवाज़ %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"इस पैकेज और इसकी सभी आवाज़ों को ऐप से हटाएँ?"</string>
+    <string name="vp_source">"आयात किया गया आवाज़ पैकेज"</string>
+    <string name="vp_title">"आवाज़ चुनें"</string>
+    <string name="vp_reading">"ऑफ़लाइन आवाज़ से पढ़ा जा रहा है"</string>
+    <string name="vp_in_use">"यह पैकेज उपयोग में है। हटाने से पहले रीडर से बाहर निकलें या पूर्वावलोकन रोकें।"</string>
+    <string name="vp_deleted">"आवाज़ पैकेज हटा दिया गया"</string>
+    <string name="vp_auto">"आयात के बाद भाषाएँ अपने आप पहचानी जाती हैं। बहुभाषी पैकेज केवल एक बार सहेजा जाता है।"</string>
+    <string name="vp_error_graph">"मॉडल के आंतरिक डेटा प्रकार असंगत हैं। कोई अन्य संस्करण, जैसे गैर-FP16 पैकेज, आज़माएँ।"</string>
+    <string name="vp_copy_url">"वॉइस पैकेज डाउनलोड लिंक कॉपी करें"</string>
+</resources>

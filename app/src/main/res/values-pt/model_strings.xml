@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"Meu espaço"</string>
+    <string name="models_title">"Modelos de tradução offline"</string>
+    <string name="models_subtitle">"Baixe os idiomas necessários para traduzir offline."</string>
+    <string name="models_usage">"Espaço usado: %1$s"</string>
+    <string name="models_count">"%1$d modelos de idioma baixados"</string>
+    <string name="models_download">"Baixar"</string>
+    <string name="models_delete">"Excluir"</string>
+    <string name="models_retry">"Tentar de novo"</string>
+    <string name="models_downloading">"Baixando. Mantenha a conexão…"</string>
+    <string name="models_deleting">"Excluindo…"</string>
+    <string name="models_ready">"Baixado"</string>
+    <string name="models_missing">"Não baixado"</string>
+    <string name="models_english">"Não precisa baixar separadamente"</string>
+    <string name="models_chinese">"Compartilhado por chinês simplificado e tradicional"</string>
+    <string name="models_wifi">"Baixar somente por Wi-Fi"</string>
+    <string name="models_wifi_hint">"As alterações se aplicam apenas a novos downloads."</string>
+    <string name="models_delete_title">"Excluir o modelo de %1$s?"</string>
+    <string name="models_delete_message">"A tradução com este idioma exigirá outro download. Livros, texto original e progresso serão mantidos."</string>
+    <string name="models_busy">"Modelo em uso. Pause a leitura traduzida e tente mais tarde."</string>
+    <string name="models_error">"Falha. Toque para tentar de novo"</string>
+    <string name="models_approx">"Cerca de 30 MB"</string>
+    <string name="models_loading">"Carregando modelos…"</string>
+    <string name="models_languages">"Modelos de idioma"</string>
+    <string name="models_info">"O inglês é o idioma intermediário e não precisa de download separado. Os modelos não incluem vozes. Tamanhos estimados antes do download e medidos depois."</string>
+    <string name="models_back">"Voltar"</string>
+    <string name="models_reading_download">"Baixando idiomas offline: %1$s"</string>
+    <string name="models_needed">"Necessário: %1$s, cerca de %2$d MB. Depois será possível traduzir offline. O texto é processado neste dispositivo."</string>
+</resources>

@@ -1,0 +1,38 @@
+package com.voicetxt.reader;
+
+import android.app.*;import android.content.*;import android.os.*;
+import java.io.*;import java.util.*;import java.util.concurrent.*;import java.util.concurrent.atomic.*;
+
+/** Real-model lifecycle checks: preload is silent, immediate play joins it, and idle memory is released. */
+public class VoiceWarmupTest extends Instrumentation {
+    void check(boolean yes,String message){if(!yes)throw new AssertionError(message);}
+    void ui(Runnable task){AtomicReference<Throwable> error=new AtomicReference<>();runOnMainSync(()->{try{task.run();}catch(Throwable failure){error.set(failure);}});if(error.get()!=null)throw new AssertionError(error.get());}
+    void await(java.util.function.BooleanSupplier condition,String message,long timeout)throws Exception{long until=SystemClock.elapsedRealtime()+timeout;while(SystemClock.elapsedRealtime()<until){AtomicBoolean ready=new AtomicBoolean();ui(()->ready.set(condition.getAsBoolean()));if(ready.get())return;Thread.sleep(75);}throw new AssertionError(message);}
+    void restore(SharedPreferences prefs,Map<String,?> saved){SharedPreferences.Editor edit=prefs.edit().clear();for(Map.Entry<String,?> entry:saved.entrySet()){Object value=entry.getValue();String key=entry.getKey();if(value instanceof String)edit.putString(key,(String)value);else if(value instanceof Integer)edit.putInt(key,(Integer)value);else if(value instanceof Long)edit.putLong(key,(Long)value);else if(value instanceof Float)edit.putFloat(key,(Float)value);else if(value instanceof Boolean)edit.putBoolean(key,(Boolean)value);}edit.commit();}
+    public void onCreate(Bundle args){super.onCreate(args);start();}
+    public void onStart(){Bundle result=new Bundle();MainActivity activity=null;Activity shelf=null;SharedPreferences prefs=getTargetContext().getSharedPreferences("reading_settings",0);Map<String,?> saved=new HashMap<>(prefs.getAll());boolean success=false;VoicePackages store=VoicePackages.get(getTargetContext());
+        try{
+            check(!getTargetContext().getSystemService(KeyguardManager.class).isKeyguardLocked(),"Unlock phone for warmup checks");VoiceModel found=null;for(VoiceModel pack:store.list("zh"))if(pack.name.contains("chaowen")&&!pack.name.contains("fp16")){found=pack;break;}if(found==null)for(VoiceModel pack:store.list("zh")){found=pack;break;}check(found!=null,"No installed model");final VoiceModel pack=found;
+            int prior=store.leases.getOrDefault(pack.id,0);PackageSpeaker standalone=new PackageSpeaker(getTargetContext(),new VoicePackages.Selection(pack,0),"zh");CountDownLatch initialized=new CountDownLatch(2);AtomicReference<Throwable> error=new AtomicReference<>();standalone.init(failure->{error.set(failure);initialized.countDown();});standalone.stop();standalone.init(failure->{error.set(failure);initialized.countDown();});check(initialized.await(40,TimeUnit.SECONDS)&&error.get()==null,"Stop during init lost callbacks");check(standalone.loadCount==1,"Concurrent initialization duplicated native model");check(standalone.track==null&&standalone.lastTiming==null,"Initialization produced audio");standalone.close();await(()->store.leases.getOrDefault(pack.id,0)==prior,"Standalone model lease leaked",15000);
+            String language=VoiceLanguages.systemLanguage(getTargetContext());String target=pack.supports(language)?"":"zh";prefs.edit().putString("readingLanguage",target).putString("systemVoiceKey",pack.key(0)).putString(MainActivity.readingVoicePreference(target.isEmpty()?language:target),pack.key(0)).apply();
+            activity=(MainActivity)startActivitySync(new Intent(getTargetContext(),MainActivity.class).putExtra("book_id","voice_warmup_qa").putExtra("book_name","首播优化验证").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));final MainActivity a=activity;
+            await(()->a.offline instanceof PackageSpeaker&&((PackageSpeaker)a.offline).ready,"Reading page did not preload selected model",40000);
+            final PackageSpeaker warmed=(PackageSpeaker)a.offline;ui(()->{check(!a.playing&&a.previewKey.isEmpty()&&warmed.track==null&&warmed.lastTiming==null,"Warmup started playback");check((a.getWindow().getAttributes().flags&android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)==0,"Warmup keeps screen awake");check(warmed.loadCount==1,"Model loaded repeatedly on page entry");a.text=VoiceStartupBenchmark.TEXT;a.chapters=MainActivity.parse(a.text);a.position=0;a.rate=1.8f;a.loopPlayback=false;a.showPosition(true);a.startReading();});
+            await(()->a.startupTiming!=null&&a.startupTiming.audioStartedAt>0&&a.latestHighlightEnd>0,"Warm model did not start reading",20000);
+            ui(()->{check(a.offline==warmed&&warmed.loadCount==1,"Warm model not reused");check(a.startupTiming.warmModel,"Warm hit not recorded");check(a.latestHighlightEnd<=48,"First natural clause was not shortened");});
+            SpeechStartupTiming first=a.startupTiming;result.putString("warmStart",first.json().toString());await(()->a.highlightUpdates>=3||first.completed,"Reading failed to advance",20000);
+            ui(()->{a.onTrimMemory(android.content.ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW);check(a.offline==warmed&&!warmed.closed,"Memory trim stopped active speech");a.stop();});
+            long updates=a.highlightUpdates;Thread.sleep(500);ui(()->{check(a.highlightUpdates==updates,"Cancelled speech updated highlight");a.releaseIdleModel();check(a.offline==null,"Idle model not released");});
+            await(()->store.leases.getOrDefault(pack.id,0)==prior,"Idle model lease retained",15000);
+            // Start reading before the newly requested warmup has completed.
+            final PackageSpeaker[] inFlight={null};ui(()->{a.warmCurrentModel();inFlight[0]=(PackageSpeaker)a.offline;a.position=0;a.startReading();});
+            await(()->a.startupTiming.audioStartedAt>0,"Immediate play did not join preload",30000);ui(()->{check(a.offline==inFlight[0]&&inFlight[0].loadCount==1,"Immediate play created a second model");a.stop();a.onTrimMemory(android.content.ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW);check(a.offline==null,"Idle memory pressure did not release model");});
+            await(()->store.leases.getOrDefault(pack.id,0)==prior,"Trimmed model lease retained",15000);
+            ui(a::warmCurrentModel);await(()->a.offline instanceof PackageSpeaker&&((PackageSpeaker)a.offline).ready,"Rewarm failed",30000);
+            shelf=startActivitySync(new Intent(getTargetContext(),ShelfActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));await(()->!a.readerVisible&&a.offline==null,"Leaving idle reader retained model",5000);
+            result.putString("result","PASS: queued initialization survives stop; simultaneous init callers share one native load; reader preloads silently without screen lock; warm play reuses instance; natural first clause and highlight; active speech survives memory trim; cancelled speech has no stale highlight; immediate play joins in-flight preload; idle/trim/background release model leases");success=true;
+        }catch(Throwable failure){result.putString("error",android.util.Log.getStackTraceString(failure));if(activity!=null&&activity.startupTiming!=null)result.putString("timing",activity.startupTiming.json().toString());}
+        finally{if(activity!=null){final MainActivity a=activity;ui(()->{a.stop();a.releaseIdleModel();a.finish();});}if(shelf!=null){final Activity a=shelf;ui(a::finish);}waitForIdleSync();restore(prefs,saved);getTargetContext().getSharedPreferences("reader_voice_warmup_qa",0).edit().clear().commit();new File(getTargetContext().getFilesDir(),"book_voice_warmup_qa.txt.position").delete();}
+        finish(success?-1:0,result);
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">Một mô hình dịch trực tiếp giữa các ngôn ngữ hỗ trợ, hoàn toàn ngoại tuyến sau khi tải.</string>
+    <string name="hy_languages">Ngôn ngữ hỗ trợ</string>
+    <string name="hy_import">Nhập mô hình</string>
+    <string name="hy_checking">Đang kiểm tra mô hình…</string>
+    <string name="hy_invalid_model">Tệp không khớp mô hình hỗ trợ. Hãy nhập phiên bản chính thức được hiển thị.</string>
+    <string name="hy_network_error">Tải thất bại. Kiểm tra mạng hoặc nhập tệp mô hình.</string>
+    <string name="hy_cancelled">Đã hủy</string>
+    <string name="hy_wifi_required">Kết nối Wi-Fi hoặc tắt chế độ chỉ tải qua Wi-Fi.</string>
+    <string name="hy_device_error">Thiết bị này không chạy được mô hình.</string>
+    <string name="hy_translate_error">Dịch thất bại. Thử lại với đoạn ngắn hơn.</string>
+    <string name="hy_delete_message">Sau khi xóa cần tải lại mô hình để dịch. Sách, giọng đọc và vị trí đọc được giữ lại.</string>
+    <string name="hy_help">Đọc nguyên bản giữ nguyên văn bản. Ngôn ngữ khác dùng HY-MT trên thiết bị để dịch trước khi đọc. Mô hình và giọng đọc được quản lý riêng.</string>
+    <string name="hy_cleanup">Xóa gói cũ</string>
+    <string name="hy_cleanup_message">Xóa các gói ML Kit cũ? HY-MT không dùng chúng. Sách, giọng đọc và vị trí đọc được giữ lại.</string>
+    <string name="hy_copy_url">Sao chép liên kết tải mô hình</string>
+    <string name="hy_copied">Đã sao chép liên kết tải</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

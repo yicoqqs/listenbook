@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">نموذج واحد للترجمة المباشرة بين اللغات المدعومة دون اتصال بعد التنزيل.</string>
+    <string name="hy_languages">اللغات المدعومة</string>
+    <string name="hy_import">استيراد النموذج</string>
+    <string name="hy_checking">جارٍ فحص النموذج…</string>
+    <string name="hy_invalid_model">الملف لا يطابق النموذج المدعوم. استورد الإصدار الرسمي الموضح.</string>
+    <string name="hy_network_error">فشل التنزيل. تحقق من الاتصال أو استورد ملف النموذج.</string>
+    <string name="hy_cancelled">تم الإلغاء</string>
+    <string name="hy_wifi_required">اتصل بشبكة Wi-Fi أو أوقف التنزيل عبر Wi-Fi فقط.</string>
+    <string name="hy_device_error">لا يمكن لهذا الجهاز تشغيل النموذج.</string>
+    <string name="hy_translate_error">فشلت الترجمة. أعد المحاولة بنص أقصر.</string>
+    <string name="hy_delete_message">بعد الحذف يجب تنزيل النموذج للترجمة مجددًا. ستبقى الكتب والأصوات وموضع القراءة.</string>
+    <string name="hy_help">تقرأ القراءة الأصلية النص كما هو. تستخدم اللغات الأخرى HY-MT على الجهاز قبل النطق. تُدار النماذج والأصوات بشكل منفصل.</string>
+    <string name="hy_cleanup">إزالة الحزم القديمة</string>
+    <string name="hy_cleanup_message">هل تريد حذف حزم ML Kit القديمة؟ لا يستخدمها HY-MT. ستبقى الكتب والأصوات وموضع القراءة.</string>
+    <string name="hy_copy_url">نسخ رابط تنزيل النموذج</string>
+    <string name="hy_copied">تم نسخ رابط التنزيل</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

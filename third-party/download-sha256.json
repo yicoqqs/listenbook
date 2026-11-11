@@ -1,0 +1,14 @@
+[
+  {
+    "Path": "C:\\yico\\voicetxt\\app\\libs\\sherpa-onnx.aar",
+    "Hash": "67AA920E08C6FB6D784009AE8C58F8A151C59041BDF77FD90BBBE56EB9522975"
+  },
+  {
+    "Path": "C:\\yico\\voicetxt\\.tools\\downloads\\kokoro.tar.bz2",
+    "Hash": "A1E94694776049035C4F2C6529F003AAECE993C76AAE9A78995831C3C4DCAFC6"
+  },
+  {
+    "Path": "C:\\yico\\voicetxt\\app\\libs\\kotlin-stdlib.jar",
+    "Hash": "F9CDCDBFF1F5DE85380AE526977E683726C2AA42DB1ED6E6E50AE89E496E95FD"
+  }
+]

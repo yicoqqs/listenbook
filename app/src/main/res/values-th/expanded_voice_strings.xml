@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"อ่านต้นฉบับเท่านั้น ยังไม่รองรับการแปลเป็นภาษานี้"</string>
+    <string name="vp_original_unknown">"ระบุภาษาไม่ได้ หยุดอ่านชั่วคราวที่ตำแหน่งนี้แล้ว"</string>
+    <string name="vp_speaker_hint">"%1$d เสียง · แตะการ์ดเพื่อเลือก หรือปุ่มเล่นเพื่อฟังตัวอย่าง"</string>
+    <string name="vp_search_speaker">"ค้นหาหมายเลขเสียง"</string>
+    <string name="vp_no_speaker">"ไม่พบเสียงที่ตรงกัน"</string>
+    <string name="vp_voice_number">"เสียง %1$d"</string>
+    <string name="vp_voice_count">"%1$d เสียง"</string>
+    <string name="vp_choose_speaker">"เลือกเสียง"</string>
+    <string name="vp_original_voice_hint">"เลือกเสียงตามภาษา การอ่านต้นฉบับจะสลับเสียงอัตโนมัติ"</string>
+</resources>

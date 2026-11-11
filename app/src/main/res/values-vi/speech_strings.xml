@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"Giọng đọc ngoại tuyến"</string>
+    <string name="speech_intro">"Quản lý giọng đọc của 15 biến thể ngôn ngữ: trạng thái, nghe thử và thao tác gói giọng đọc."</string>
+    <string name="speech_hint">"Mở ngôn ngữ để xem giọng đọc. Nhấn phát để nghe thử."</string>
+    <string name="speech_ready_count">"Có %1$d giọng đọc ngoại tuyến"</string>
+    <string name="speech_missing">"Chưa có giọng đọc ngoại tuyến"</string>
+    <string name="speech_checking">"Đang kiểm tra giọng đọc…"</string>
+    <string name="speech_builtin">"Tích hợp trong ứng dụng"</string>
+    <string name="speech_builtin_hint">"Đi kèm ứng dụng"</string>
+    <string name="speech_manage">"Quản lý giọng đọc"</string>
+    <string name="speech_install">"Tải giọng đọc"</string>
+    <string name="speech_selected">"Đã chọn"</string>
+    <string name="speech_next_play">"Đã lưu giọng đọc ưu tiên cho ngôn ngữ này."</string>
+    <string name="speech_engines">"Chọn bộ máy giọng đọc"</string>
+    <string name="speech_settings">"Cài đặt giọng đọc hệ thống"</string>
+    <string name="speech_unavailable">"Không thể mở quản lý giọng đọc. Hãy dùng cài đặt hệ thống."</string>
+    <string name="speech_no_engines">"Chưa cài bộ máy giọng đọc hệ thống phù hợp."</string>
+    <string name="speech_info">"Gói giọng đọc tạo âm thanh; mô hình dịch chuyển ngữ văn bản. Mỗi bộ máy quản lý việc tải và xóa gói giọng đọc. Trạng thái cập nhật khi quay lại."</string>
+    <string name="speech_home_hint">"Đọc ngoại tuyến, quản lý ngôn ngữ và giọng đọc theo nhu cầu."</string>
+    <string name="speech_not_downloaded">"Chưa tải gói giọng đọc ngoại tuyến"</string>
+    <string name="speech_not_offered">"Các bộ máy hiện tại chưa cung cấp giọng ngoại tuyến phù hợp"</string>
+    <string name="speech_check_engine">"Xem bộ máy giọng đọc"</string>
+    <string name="speech_delete">"Xóa gói giọng đọc"</string>
+    <string name="speech_redownload">"Tải lại"</string>
+    <string name="speech_engine_instruction">"Trên trang bộ máy, chọn %1$s để thực hiện: %2$s."</string>
+    <string name="speech_engine_hint">"Tải xuống bắt đầu tại đây. Việc xóa và tải lại vẫn cần trang bộ máy."</string>
+    <string name="speech_downloading">"Đang chờ bộ máy tải xuống…"</string>
+    <string name="speech_download_failed">"Dữ liệu giọng đọc chưa được cài đặt. Kiểm tra kết nối rồi thử lại."</string>
+    <string name="speech_package_ready">"Có sẵn"</string>
+</resources>

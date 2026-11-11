@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"मेरा पेज"</string>
+    <string name="models_title">"ऑफ़लाइन अनुवाद मॉडल"</string>
+    <string name="models_subtitle">"ऑफ़लाइन अनुवाद के लिए ज़रूरी भाषाएँ डाउनलोड करें।"</string>
+    <string name="models_usage">"इस्तेमाल की जगह: %1$s"</string>
+    <string name="models_count">"%1$d भाषा मॉडल डाउनलोड हुए"</string>
+    <string name="models_download">"डाउनलोड"</string>
+    <string name="models_delete">"हटाएँ"</string>
+    <string name="models_retry">"फिर कोशिश करें"</string>
+    <string name="models_downloading">"डाउनलोड हो रहा है। कनेक्शन बनाए रखें…"</string>
+    <string name="models_deleting">"हटाया जा रहा है…"</string>
+    <string name="models_ready">"डाउनलोड किया गया"</string>
+    <string name="models_missing">"डाउनलोड नहीं हुआ"</string>
+    <string name="models_english">"अलग डाउनलोड ज़रूरी नहीं"</string>
+    <string name="models_chinese">"सरलीकृत और पारंपरिक चीनी के लिए साझा"</string>
+    <string name="models_wifi">"केवल Wi-Fi पर डाउनलोड करें"</string>
+    <string name="models_wifi_hint">"बदलाव केवल नए डाउनलोड पर लागू होंगे।"</string>
+    <string name="models_delete_title">"%1$s मॉडल हटाएँ?"</string>
+    <string name="models_delete_message">"इस भाषा में ऑफ़लाइन अनुवाद के लिए फिर डाउनलोड करना होगा। किताबें, मूल पाठ और पढ़ने की प्रगति सुरक्षित रहेंगी।"</string>
+    <string name="models_busy">"मॉडल व्यस्त है। अनूदित पाठ का वाचन रोकें और बाद में कोशिश करें।"</string>
+    <string name="models_error">"प्रक्रिया विफल। दोबारा कोशिश के लिए टैप करें"</string>
+    <string name="models_approx">"लगभग 30 MB"</string>
+    <string name="models_loading">"मॉडल लोड हो रहे हैं…"</string>
+    <string name="models_languages">"भाषा मॉडल"</string>
+    <string name="models_info">"अंग्रेज़ी मध्यवर्ती भाषा है और अलग डाउनलोड नहीं चाहिए। मॉडल में वाचन की आवाज़ें नहीं हैं। डाउनलोड से पहले अनुमानित और बाद में फ़ाइल का आकार दिखता है।"</string>
+    <string name="models_back">"वापस"</string>
+    <string name="models_reading_download">"ऑफ़लाइन भाषाएँ डाउनलोड हो रही हैं: %1$s"</string>
+    <string name="models_needed">"ज़रूरी: %1$s, लगभग %2$d MB। इसके बाद ऑफ़लाइन अनुवाद चलेगा। पाठ इसी डिवाइस पर संसाधित होता है।"</string>
+</resources>

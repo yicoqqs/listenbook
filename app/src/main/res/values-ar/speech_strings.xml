@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"الأصوات دون اتصال"</string>
+    <string name="speech_intro">"أدِر أصوات 15 صيغة لغوية: الحالة والاستماع وإجراءات حزم الصوت."</string>
+    <string name="speech_hint">"افتح لغة لعرض أصواتها واضغط تشغيل للاستماع."</string>
+    <string name="speech_ready_count">"أصوات متاحة دون اتصال: %1$d"</string>
+    <string name="speech_missing">"لا يوجد صوت متاح دون اتصال"</string>
+    <string name="speech_checking">"جارٍ فحص الأصوات…"</string>
+    <string name="speech_builtin">"مضمّنة في التطبيق"</string>
+    <string name="speech_builtin_hint">"تأتي مع التطبيق"</string>
+    <string name="speech_manage">"إدارة الأصوات"</string>
+    <string name="speech_install">"تنزيل الأصوات"</string>
+    <string name="speech_selected">"محدّد"</string>
+    <string name="speech_next_play">"حُفظ الصوت المفضل لهذه اللغة."</string>
+    <string name="speech_engines">"اختيار محرك صوت"</string>
+    <string name="speech_settings">"إعدادات الصوت في النظام"</string>
+    <string name="speech_unavailable">"تعذّر فتح إدارة الأصوات. استخدم إعدادات النظام."</string>
+    <string name="speech_no_engines">"لا يوجد محرك صوت نظام مناسب مثبت."</string>
+    <string name="speech_info">"حزم الأصوات تولّد الكلام، ونماذج الترجمة تترجم النص. ينزّل كل محرك حزم أصواته ويحذفها، وتُحدّث الحالة عند العودة."</string>
+    <string name="speech_home_hint">"قراءة دون اتصال، مع إدارة اللغات والأصوات حسب الحاجة."</string>
+    <string name="speech_not_downloaded">"لم تُنزّل حزمة الصوت دون اتصال"</string>
+    <string name="speech_not_offered">"المحركات الحالية لا توفر صوتًا مناسبًا دون اتصال"</string>
+    <string name="speech_check_engine">"عرض محركات الصوت"</string>
+    <string name="speech_delete">"حذف حزمة الصوت"</string>
+    <string name="speech_redownload">"إعادة التنزيل"</string>
+    <string name="speech_engine_instruction">"في صفحة المحرك، اختر %1$s لتنفيذ: %2$s."</string>
+    <string name="speech_engine_hint">"يبدأ التنزيل هنا. يظل الحذف وإعادة التنزيل بحاجة إلى صفحة المحرك."</string>
+    <string name="speech_downloading">"بانتظار تنزيل المحرك…"</string>
+    <string name="speech_download_failed">"لم تُثبت بيانات الصوت بعد. تحقق من الاتصال وحاول مجددًا."</string>
+    <string name="speech_package_ready">"متاح"</string>
+</resources>

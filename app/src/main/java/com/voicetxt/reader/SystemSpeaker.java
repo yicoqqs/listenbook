@@ -1,0 +1,36 @@
+package com.voicetxt.reader;
+import android.content.Context;
+import android.os.*;
+import android.speech.tts.*;
+import java.util.*;
+import java.util.concurrent.*;
+
+/** Uses only installed Android TTS engines; voice availability remains engine-owned. */
+final class SystemSpeaker {
+    static class Option {final String engine,key,legacyKey,label,engineLabel;final int number;final Voice voice;final TextToSpeech tts;Option(String e,String name,Voice v,TextToSpeech t,int number){engine=e;engineLabel=name;this.number=number;voice=v;tts=t;legacyKey=e+"|"+v.getName();key=voiceKey(e,v);label=name+" · "+v.getLocale().getDisplayLanguage()+" "+number;}}
+    static String voiceKey(String engine,Voice voice){return engine+"|v2|"+android.net.Uri.encode(String.valueOf(voice.getName()))+"|"+android.net.Uri.encode(voice.getLocale().toLanguageTag());}
+    interface Listener {void sentence(int index);void range(int index,int start,int end);void done();void failed();default void failed(Throwable error){failed();}}
+    final Handler main=new Handler(Looper.getMainLooper());final Context context;
+    final LinkedHashMap<String,String> engineLabels=new LinkedHashMap<>();
+    final LinkedHashMap<String,TextToSpeech> engineClients=new LinkedHashMap<>();
+    final ArrayList<TextToSpeech> engines=new ArrayList<>();final ArrayList<Option> options=new ArrayList<>();
+    final ThreadPoolExecutor preparation=new ThreadPoolExecutor(1,1,0L,TimeUnit.MILLISECONDS,new LinkedBlockingQueue<Runnable>());
+    volatile boolean initialized=false;int pending=0;boolean closed=false;volatile int epoch=0;Runnable changed;
+    SystemSpeaker(Context c){context=c.getApplicationContext();}
+    static boolean allowedEngine(String name){return name!=null&&!name.toLowerCase(Locale.ROOT).contains("google");}
+    void init(Runnable callback){changed=callback;android.content.pm.PackageManager pm=context.getPackageManager();List<android.content.pm.ResolveInfo> services=pm.queryIntentServices(new android.content.Intent(TextToSpeech.Engine.INTENT_ACTION_TTS_SERVICE),0);LinkedHashMap<String,String> found=new LinkedHashMap<>();for(android.content.pm.ResolveInfo service:services)if(service.serviceInfo!=null&&allowedEngine(service.serviceInfo.packageName))found.put(service.serviceInfo.packageName,String.valueOf(service.loadLabel(pm)));pending=found.size();if(pending==0){initialized=true;main.post(()->{if(!closed)changed.run();});return;}for(Map.Entry<String,String> engine:found.entrySet())load(engine.getKey(),engine.getValue());}
+    void load(String name,String label){engineLabels.put(name,label);TextToSpeech[] holder=new TextToSpeech[1];holder[0]=new TextToSpeech(context,status->main.post(()->{if(closed)return;TextToSpeech t=holder[0];if(status==TextToSpeech.SUCCESS&&t!=null){engineClients.put(name,t);collect(name,label,t);}options.sort(Comparator.comparing(o->o.key));if(--pending==0)initialized=true;changed.run();}),name);engines.add(holder[0]);}
+    void collect(String name,String label,TextToSpeech t){try{Set<Voice> all=t.getVoices();ArrayList<Voice> zh=new ArrayList<>();if(all!=null)for(Voice v:all)if(VoiceLanguages.supported(v.getLocale()))zh.add(v);zh.sort(Comparator.comparing(v->voiceKey(name,v)));LinkedHashMap<String,Voice> unique=new LinkedHashMap<>();for(Voice voice:zh){String key=voiceKey(name,voice);Voice old=unique.get(key);if(old==null||(old.isNetworkConnectionRequired()&&!voice.isNetworkConnectionRequired()))unique.put(key,voice);}HashMap<String,Integer> numbers=new HashMap<>();for(Voice voice:unique.values()){String language=voice.getLocale().getLanguage();int number=numbers.containsKey(language)?numbers.get(language)+1:1;numbers.put(language,number);Option option=new Option(name,label,voice,t,number);boolean exists=false;for(Option old:options)if(old.key.equals(option.key)){exists=true;break;}if(!exists)options.add(option);}}catch(RuntimeException ignored){}}
+    String fingerprint(){StringBuilder value=new StringBuilder();for(Option option:options)value.append(option.key).append(':').append(option.voice.getFeatures()).append(';');return value.toString();}
+    boolean refreshOptions(){String before=fingerprint();options.clear();for(Map.Entry<String,TextToSpeech> engine:engineClients.entrySet())collect(engine.getKey(),engineLabels.get(engine.getKey()),engine.getValue());options.sort(Comparator.comparing(o->o.key));return !before.equals(fingerprint());}
+    Option find(String key){for(Option o:options)if(o.key.equals(key))return o;for(Option o:options)if(o.legacyKey.equals(key))return o;return null;}
+    static boolean offlineUsable(Voice voice){return !voice.isNetworkConnectionRequired()&&(voice.getFeatures()==null||!voice.getFeatures().contains(TextToSpeech.Engine.KEY_FEATURE_NOT_INSTALLED));}
+    Option offlineVoice(String language,String preferred){Option old=find(preferred);if(old!=null&&offlineUsable(old.voice)&&VoiceLanguages.matches(language,old.voice.getLocale()))return old;Option first=null;Locale target=Locale.forLanguageTag(language);for(Option option:options)if(offlineUsable(option.voice)&&VoiceLanguages.matches(language,option.voice.getLocale())){if(first==null)first=option;if(option.voice.equals(option.tts.getDefaultVoice()))return option;if(!target.getCountry().isEmpty()&&target.getCountry().equals(option.voice.getLocale().getCountry()))first=option;}return first;}
+    void speak(java.util.List<String> lines,Option option,float speed,Listener listener){stop();final int request=epoch;TextToSpeech t=option.tts;if(t.setVoice(option.voice)!=TextToSpeech.SUCCESS){listener.failed();return;}t.setSpeechRate(speed);final int[] queued={0};
+        Runnable enqueue=()->{if(closed||epoch!=request)return;int i=queued[0];if(i>=lines.size())return;queued[0]++;preparation.execute(()->{try{String value=lines.get(i);main.post(()->{if(closed||epoch!=request)return;if(t.speak(value,TextToSpeech.QUEUE_ADD,null,request+":"+i)==TextToSpeech.ERROR)listener.failed();});}catch(Throwable e){main.post(()->{if(!closed&&epoch==request)listener.failed(e);});}});};
+        t.setOnUtteranceProgressListener(new UtteranceProgressListener(){boolean current(String id){return !closed&&epoch==request&&id!=null&&id.startsWith(request+":");}int index(String id){return Integer.parseInt(id.substring(id.indexOf(':')+1));}public void onStart(String id){main.post(()->{if(current(id))listener.sentence(index(id));});}public void onDone(String id){main.post(()->{if(!current(id))return;if(index(id)==lines.size()-1)listener.done();else enqueue.run();});}public void onError(String id){main.post(()->{if(current(id))listener.failed();});}public void onError(String id,int errorCode){if(errorCode==TextToSpeech.ERROR_INVALID_REQUEST){android.util.Log.w("VoiceTxtSystem","Skipping invalid speech segment "+id);onDone(id);}else onError(id);}public void onRangeStart(String id,int start,int end,int frame){main.post(()->{if(current(id))listener.range(index(id),start,end);});}});
+        for(int i=0;i<Math.min(3,lines.size());i++)enqueue.run();
+    }
+    void stop(){epoch++;preparation.getQueue().clear();for(TextToSpeech t:engines)if(t!=null)t.stop();}
+    void close(){stop();closed=true;preparation.shutdownNow();for(TextToSpeech t:engines)if(t!=null)t.shutdown();engines.clear();}
+}

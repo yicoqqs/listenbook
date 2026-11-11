@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_switch_loading">"Đang chuẩn bị giọng mới; vẫn tiếp tục đọc."</string>
+    <string name="voice_switch_ready">"Giọng đã sẵn sàng; sẽ chuyển giữa các câu."</string>
+    <string name="voice_switch_failed">"Không đổi được giọng. Đã giữ giọng trước đó."</string>
+</resources>

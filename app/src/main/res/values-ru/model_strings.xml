@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"Мой раздел"</string>
+    <string name="models_title">"Модели офлайн-перевода"</string>
+    <string name="models_subtitle">"Загрузите нужные языки для перевода без интернета."</string>
+    <string name="models_usage">"Занято: %1$s"</string>
+    <string name="models_count">"Загружено языковых моделей: %1$d"</string>
+    <string name="models_download">"Загрузить"</string>
+    <string name="models_delete">"Удалить"</string>
+    <string name="models_retry">"Повторить"</string>
+    <string name="models_downloading">"Загрузка. Сохраните подключение…"</string>
+    <string name="models_deleting">"Удаление…"</string>
+    <string name="models_ready">"Загружено"</string>
+    <string name="models_missing">"Не загружено"</string>
+    <string name="models_english">"Отдельная загрузка не нужна"</string>
+    <string name="models_chinese">"Для упрощённого и традиционного китайского"</string>
+    <string name="models_wifi">"Загружать только по Wi-Fi"</string>
+    <string name="models_wifi_hint">"Изменения относятся только к новым загрузкам."</string>
+    <string name="models_delete_title">"Удалить модель: %1$s?"</string>
+    <string name="models_delete_message">"Для перевода с этим языком потребуется повторная загрузка. Книги, исходный текст и прогресс сохранятся."</string>
+    <string name="models_busy">"Модель занята. Приостановите чтение перевода и повторите позже."</string>
+    <string name="models_error">"Ошибка. Нажмите для повтора"</string>
+    <string name="models_approx">"Около 30 МБ"</string>
+    <string name="models_loading">"Загрузка списка…"</string>
+    <string name="models_languages">"Языковые модели"</string>
+    <string name="models_info">"Английский служит промежуточным языком и не требует отдельной загрузки. Модели не содержат голоса. До загрузки указан примерный размер, после — размер файлов."</string>
+    <string name="models_back">"Назад"</string>
+    <string name="models_reading_download">"Загрузка офлайн-языков: %1$s"</string>
+    <string name="models_needed">"Требуется: %1$s, около %2$d МБ. Затем перевод доступен без интернета. Текст обрабатывается на устройстве."</string>
+</resources>

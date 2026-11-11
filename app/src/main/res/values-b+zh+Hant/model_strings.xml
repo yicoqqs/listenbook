@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"我的"</string>
+    <string name="models_title">"離線翻譯模型"</string>
+    <string name="models_subtitle">"按需下載語言，下載後無需聯網即可翻譯閱讀。"</string>
+    <string name="models_usage">"已佔用 %1$s"</string>
+    <string name="models_count">"已下載 %1$d 個語言模型"</string>
+    <string name="models_download">"下載"</string>
+    <string name="models_delete">"刪除"</string>
+    <string name="models_retry">"重試"</string>
+    <string name="models_downloading">"下載中，請保持網絡連接…"</string>
+    <string name="models_deleting">"正在刪除…"</string>
+    <string name="models_ready">"已下載"</string>
+    <string name="models_missing">"未下載"</string>
+    <string name="models_english">"無需單獨下載"</string>
+    <string name="models_chinese">"簡體與繁體中文共用此模型"</string>
+    <string name="models_wifi">"僅在 Wi-Fi 下下載"</string>
+    <string name="models_wifi_hint">"更改後對新發起的下載生效，進行中的下載不受影響。"</string>
+    <string name="models_delete_title">"刪除%1$s模型？"</string>
+    <string name="models_delete_message">"刪除後，涉及此語言的離線翻譯需要重新下載模型。原文、書架和閱讀進度不會刪除。"</string>
+    <string name="models_busy">"模型正在使用或處理，請暫停譯讀並稍後重試。"</string>
+    <string name="models_error">"操作失敗，點擊重試"</string>
+    <string name="models_approx">"約 30 MB"</string>
+    <string name="models_loading">"正在讀取模型…"</string>
+    <string name="models_languages">"語言模型"</string>
+    <string name="models_info">"英語作爲翻譯中間語言，無需單獨下載。翻譯模型不包含朗讀音色。下載前顯示估算大小，已下載後顯示文件佔用。"</string>
+    <string name="models_back">"返回"</string>
+    <string name="models_reading_download">"正在下載離線語言：%1$s"</string>
+    <string name="models_needed">"需要下載：%1$s，預計約 %2$d MB。下載後即可離線譯讀，書籍文本在本機處理。"</string>
+</resources>

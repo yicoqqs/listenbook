@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"Akun saya"</string>
+    <string name="models_title">"Model terjemahan offline"</string>
+    <string name="models_subtitle">"Unduh bahasa yang diperlukan untuk menerjemahkan offline."</string>
+    <string name="models_usage">"Ruang terpakai: %1$s"</string>
+    <string name="models_count">"%1$d model bahasa diunduh"</string>
+    <string name="models_download">"Unduh"</string>
+    <string name="models_delete">"Hapus"</string>
+    <string name="models_retry">"Coba lagi"</string>
+    <string name="models_downloading">"Mengunduh. Pertahankan koneksi…"</string>
+    <string name="models_deleting">"Menghapus…"</string>
+    <string name="models_ready">"Sudah diunduh"</string>
+    <string name="models_missing">"Belum diunduh"</string>
+    <string name="models_english">"Tidak perlu unduhan terpisah"</string>
+    <string name="models_chinese">"Dipakai bersama oleh Mandarin sederhana dan tradisional"</string>
+    <string name="models_wifi">"Unduh hanya melalui Wi-Fi"</string>
+    <string name="models_wifi_hint">"Perubahan hanya berlaku untuk unduhan baru."</string>
+    <string name="models_delete_title">"Hapus model %1$s?"</string>
+    <string name="models_delete_message">"Terjemahan offline yang memakai bahasa ini perlu diunduh lagi. Buku, teks asli, dan progres membaca tetap tersimpan."</string>
+    <string name="models_busy">"Model sedang dipakai. Jeda pembacaan terjemahan dan coba lagi nanti."</string>
+    <string name="models_error">"Gagal. Ketuk untuk mencoba lagi"</string>
+    <string name="models_approx">"Sekitar 30 MB"</string>
+    <string name="models_loading">"Memuat model…"</string>
+    <string name="models_languages">"Model bahasa"</string>
+    <string name="models_info">"Inggris menjadi bahasa perantara dan tidak perlu unduhan terpisah. Model tidak mencakup suara baca. Ukuran diperkirakan sebelum unduh dan diukur setelahnya."</string>
+    <string name="models_back">"Kembali"</string>
+    <string name="models_reading_download">"Mengunduh bahasa offline: %1$s"</string>
+    <string name="models_needed">"Diperlukan: %1$s, sekitar %2$d MB. Setelah itu terjemahan bisa offline. Teks diproses di perangkat ini."</string>
+</resources>

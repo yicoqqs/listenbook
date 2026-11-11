@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_language_filter">"仅显示支持当前阅读语言的可用音色"</string>
+    <string name="voice_language_missing">"系统暂无支持此语言的可用音色"</string>
+</resources>

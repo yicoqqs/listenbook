@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"Mon espace"</string>
+    <string name="models_title">"Modèles de traduction hors ligne"</string>
+    <string name="models_subtitle">"Téléchargez les langues utiles pour traduire hors ligne."</string>
+    <string name="models_usage">"Espace utilisé : %1$s"</string>
+    <string name="models_count">"%1$d modèles de langue téléchargés"</string>
+    <string name="models_download">"Télécharger"</string>
+    <string name="models_delete">"Supprimer"</string>
+    <string name="models_retry">"Réessayer"</string>
+    <string name="models_downloading">"Téléchargement en cours. Gardez la connexion…"</string>
+    <string name="models_deleting">"Suppression…"</string>
+    <string name="models_ready">"Téléchargé"</string>
+    <string name="models_missing">"Non téléchargé"</string>
+    <string name="models_english">"Aucun téléchargement distinct"</string>
+    <string name="models_chinese">"Commun aux chinois simplifié et traditionnel"</string>
+    <string name="models_wifi">"Télécharger via Wi-Fi uniquement"</string>
+    <string name="models_wifi_hint">"Ce réglage concerne les nouveaux téléchargements uniquement."</string>
+    <string name="models_delete_title">"Supprimer le modèle %1$s ?"</string>
+    <string name="models_delete_message">"La traduction dans cette langue nécessitera un nouveau téléchargement. Vos livres, textes et progression seront conservés."</string>
+    <string name="models_busy">"Modèle occupé. Mettez la lecture traduite en pause et réessayez plus tard."</string>
+    <string name="models_error">"Échec. Touchez pour réessayer"</string>
+    <string name="models_approx">"Environ 30 Mo"</string>
+    <string name="models_loading">"Chargement des modèles…"</string>
+    <string name="models_languages">"Modèles de langue"</string>
+    <string name="models_info">"L’anglais sert de langue intermédiaire et ne nécessite aucun téléchargement distinct. Les modèles ne contiennent pas de voix. Tailles estimées avant téléchargement, mesurées ensuite."</string>
+    <string name="models_back">"Retour"</string>
+    <string name="models_reading_download">"Téléchargement des langues : %1$s"</string>
+    <string name="models_needed">"Langues requises : %1$s, environ %2$d Mo. La traduction fonctionnera ensuite hors ligne. Le texte est traité sur cet appareil."</string>
+</resources>

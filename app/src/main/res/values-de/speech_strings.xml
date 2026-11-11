@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"Offline-Stimmen"</string>
+    <string name="speech_intro">"Offline-Stimmen für 15 Sprachvarianten verwalten: Status, Vorschau und Sprachpakete."</string>
+    <string name="speech_hint">"Sprache öffnen, um Stimmen zu sehen. Zum Anhören auf Wiedergabe tippen."</string>
+    <string name="speech_ready_count">"%1$d Offline-Stimmen verfügbar"</string>
+    <string name="speech_missing">"Keine Offline-Stimme verfügbar"</string>
+    <string name="speech_checking">"Stimmen werden geprüft…"</string>
+    <string name="speech_builtin">"In der App enthalten"</string>
+    <string name="speech_builtin_hint">"Mit der App geliefert"</string>
+    <string name="speech_manage">"Stimmen verwalten"</string>
+    <string name="speech_install">"Stimmen laden"</string>
+    <string name="speech_selected">"Ausgewählt"</string>
+    <string name="speech_next_play">"Bevorzugte Stimme für diese Sprache gespeichert."</string>
+    <string name="speech_engines">"Sprachengine auswählen"</string>
+    <string name="speech_settings">"System-Sprachausgabe"</string>
+    <string name="speech_unavailable">"Sprachverwaltung lässt sich nicht öffnen. Bitte die Systemeinstellungen verwenden."</string>
+    <string name="speech_no_engines">"Keine nutzbare System-Sprachengine installiert."</string>
+    <string name="speech_info">"Sprachdaten erzeugen die Stimme, Übersetzungsmodelle übersetzen Text. Die jeweilige Engine verwaltet Downloads und Löschungen. Nach der Rückkehr wird der Status aktualisiert."</string>
+    <string name="speech_home_hint">"Offline lesen, Sprachen und Stimmen nach Bedarf verwalten."</string>
+    <string name="speech_not_downloaded">"Offline-Sprachpaket nicht geladen"</string>
+    <string name="speech_not_offered">"Die vorhandenen Engines bieten keine passende Offline-Stimme"</string>
+    <string name="speech_check_engine">"Sprachengines ansehen"</string>
+    <string name="speech_delete">"Sprachpaket löschen"</string>
+    <string name="speech_redownload">"Erneut herunterladen"</string>
+    <string name="speech_engine_instruction">"Wählen Sie auf der Engine-Seite %1$s für: %2$s."</string>
+    <string name="speech_engine_hint">"Downloads starten hier. Löschen und erneuter Download benötigen weiterhin die Engine-Seite."</string>
+    <string name="speech_downloading">"Warten auf den Download durch die Engine…"</string>
+    <string name="speech_download_failed">"Sprachdaten noch nicht installiert. Verbindung prüfen und erneut versuchen."</string>
+    <string name="speech_package_ready">"Verfügbar"</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"オフライン音声"</string>
+    <string name="speech_intro">"15種類の言語の音声を管理し、状態の確認、試聴、音声データの操作ができます。"</string>
+    <string name="speech_hint">"言語を開いて音声を表示し、再生ボタンで試聴できます。"</string>
+    <string name="speech_ready_count">"%1$d 個の音声を利用可能"</string>
+    <string name="speech_missing">"オフライン音声がありません"</string>
+    <string name="speech_checking">"音声を確認中…"</string>
+    <string name="speech_builtin">"アプリ内蔵"</string>
+    <string name="speech_builtin_hint">"アプリに付属"</string>
+    <string name="speech_manage">"音声を管理"</string>
+    <string name="speech_install">"音声を取得"</string>
+    <string name="speech_selected">"選択済み"</string>
+    <string name="speech_next_play">"この言語の優先音声を保存しました。"</string>
+    <string name="speech_engines">"音声エンジンを選択"</string>
+    <string name="speech_settings">"システムの音声設定"</string>
+    <string name="speech_unavailable">"音声管理を開けません。システム設定で音声データを管理してください。"</string>
+    <string name="speech_no_engines">"利用可能なシステム音声エンジンがありません。"</string>
+    <string name="speech_info">"音声データは発声、翻訳モデルは翻訳に使います。システム音声の取得や削除は各エンジンで行い、戻ると状態を更新します。"</string>
+    <string name="speech_home_hint">"必要な言語と音声でオフライン読書。"</string>
+    <string name="speech_not_downloaded">"オフライン音声が未取得です"</string>
+    <string name="speech_not_offered">"現在のエンジンに対応する音声がありません"</string>
+    <string name="speech_check_engine">"音声エンジンを確認"</string>
+    <string name="speech_delete">"音声を削除"</string>
+    <string name="speech_redownload">"再ダウンロード"</string>
+    <string name="speech_engine_instruction">"エンジン画面で%1$sを選び、「%2$s」を行ってください。"</string>
+    <string name="speech_engine_hint">"この画面から取得を開始します。削除と再取得はエンジン画面で行います。"</string>
+    <string name="speech_downloading">"エンジンによる取得を待機中…"</string>
+    <string name="speech_download_failed">"音声の取得が完了していません。接続を確認して再試行してください。"</string>
+    <string name="speech_package_ready">"利用可能"</string>
+</resources>

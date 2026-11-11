@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"Của tôi"</string>
+    <string name="models_title">"Mô hình dịch ngoại tuyến"</string>
+    <string name="models_subtitle">"Tải ngôn ngữ cần dùng để dịch ngoại tuyến."</string>
+    <string name="models_usage">"Dung lượng đã dùng: %1$s"</string>
+    <string name="models_count">"Đã tải %1$d mô hình ngôn ngữ"</string>
+    <string name="models_download">"Tải xuống"</string>
+    <string name="models_delete">"Xóa"</string>
+    <string name="models_retry">"Thử lại"</string>
+    <string name="models_downloading">"Đang tải. Hãy duy trì kết nối…"</string>
+    <string name="models_deleting">"Đang xóa…"</string>
+    <string name="models_ready">"Đã tải"</string>
+    <string name="models_missing">"Chưa tải"</string>
+    <string name="models_english">"Không cần tải riêng"</string>
+    <string name="models_chinese">"Dùng chung cho tiếng Trung giản thể và phồn thể"</string>
+    <string name="models_wifi">"Chỉ tải qua Wi-Fi"</string>
+    <string name="models_wifi_hint">"Thay đổi chỉ áp dụng cho lượt tải mới."</string>
+    <string name="models_delete_title">"Xóa mô hình %1$s?"</string>
+    <string name="models_delete_message">"Dịch ngoại tuyến có dùng ngôn ngữ này sẽ cần tải lại. Sách, văn bản gốc và tiến độ đọc được giữ nguyên."</string>
+    <string name="models_busy">"Mô hình đang bận. Tạm dừng đọc bản dịch rồi thử lại sau."</string>
+    <string name="models_error">"Thao tác thất bại. Chạm để thử lại"</string>
+    <string name="models_approx">"Khoảng 30 MB"</string>
+    <string name="models_loading">"Đang tải danh sách mô hình…"</string>
+    <string name="models_languages">"Mô hình ngôn ngữ"</string>
+    <string name="models_info">"Tiếng Anh là ngôn ngữ trung gian nên không cần tải riêng. Mô hình không bao gồm giọng đọc. Kích thước được ước tính trước khi tải và đo sau khi tải."</string>
+    <string name="models_back">"Quay lại"</string>
+    <string name="models_reading_download">"Đang tải ngôn ngữ ngoại tuyến: %1$s"</string>
+    <string name="models_needed">"Cần tải: %1$s, khoảng %2$d MB. Sau đó có thể dịch ngoại tuyến. Văn bản được xử lý trên thiết bị này."</string>
+</resources>

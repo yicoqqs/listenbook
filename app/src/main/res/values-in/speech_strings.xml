@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"Suara offline"</string>
+    <string name="speech_intro">"Kelola suara untuk 15 varian bahasa: status, contoh suara, dan tindakan paket suara."</string>
+    <string name="speech_hint">"Buka bahasa untuk melihat suara. Ketuk putar untuk mendengar contoh."</string>
+    <string name="speech_ready_count">"%1$d suara offline tersedia"</string>
+    <string name="speech_missing">"Tidak ada suara offline tersedia"</string>
+    <string name="speech_checking">"Memeriksa suara…"</string>
+    <string name="speech_builtin">"Bawaan aplikasi"</string>
+    <string name="speech_builtin_hint">"Disertakan dalam aplikasi"</string>
+    <string name="speech_manage">"Kelola suara"</string>
+    <string name="speech_install">"Unduh suara"</string>
+    <string name="speech_selected">"Dipilih"</string>
+    <string name="speech_next_play">"Suara pilihan untuk bahasa ini disimpan."</string>
+    <string name="speech_engines">"Pilih mesin suara"</string>
+    <string name="speech_settings">"Pengaturan suara sistem"</string>
+    <string name="speech_unavailable">"Pengelola suara tidak dapat dibuka. Gunakan pengaturan sistem."</string>
+    <string name="speech_no_engines">"Tidak ada mesin suara sistem yang dapat digunakan."</string>
+    <string name="speech_info">"Paket suara menghasilkan ucapan; model menerjemahkan teks. Setiap mesin mengelola unduhan dan penghapusan paket suaranya. Status diperbarui setelah kembali."</string>
+    <string name="speech_home_hint">"Membaca offline dengan bahasa dan suara sesuai kebutuhan."</string>
+    <string name="speech_not_downloaded">"Paket suara offline belum diunduh"</string>
+    <string name="speech_not_offered">"Mesin saat ini tidak menyediakan suara offline yang sesuai"</string>
+    <string name="speech_check_engine">"Lihat mesin suara"</string>
+    <string name="speech_delete">"Hapus paket suara"</string>
+    <string name="speech_redownload">"Unduh ulang"</string>
+    <string name="speech_engine_instruction">"Di halaman mesin, pilih %1$s untuk: %2$s."</string>
+    <string name="speech_engine_hint">"Unduhan dimulai di sini. Penghapusan dan unduhan ulang masih memerlukan halaman mesin."</string>
+    <string name="speech_downloading">"Menunggu unduhan oleh mesin…"</string>
+    <string name="speech_download_failed">"Data suara belum terpasang. Periksa koneksi lalu coba lagi."</string>
+    <string name="speech_package_ready">"Tersedia"</string>
+</resources>

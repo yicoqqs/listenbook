@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"استيراد ملف"</string>
+    <string name="vp_address">"تنزيل من رابط"</string>
+    <string name="vp_hint">"حزم sherpa-onnx VITS / Kokoro أو Matcha الكاملة (.zip، .tar.bz2، .tar.gz، .tar). يتم التحقق من اللغة والملفات. لا يكفي ملف .pt أو .onnx منفرد."</string>
+    <string name="vp_extract">"جارٍ فك حزمة الصوت…"</string>
+    <string name="vp_validate">"جارٍ التحقق من اللغة واختبار النموذج…"</string>
+    <string name="vp_done">"حزمة الصوت جاهزة"</string>
+    <string name="vp_error_language">"حزمة غير صالحة: اللغة لا تطابق اللغة المختارة."</string>
+    <string name="vp_error_unknown">"حزمة غير صالحة: تعذر التحقق من لغة النموذج."</string>
+    <string name="vp_error_invalid">"حزمة غير صالحة أو غير مدعومة. استخدم حزمة VITS / Kokoro أو Matcha متوافقة."</string>
+    <string name="vp_error_incomplete">"حزمة غير صالحة: ملفات النموذج أو القواميس المطلوبة مفقودة."</string>
+    <string name="vp_error_duplicate">"تم استيراد هذه الحزمة بالفعل."</string>
+    <string name="vp_error_storage">"المساحة غير كافية أو الحزمة كبيرة جدًا."</string>
+    <string name="vp_error_url">"أدخل رابط HTTPS مباشرًا لحزمة الصوت الكاملة."</string>
+    <string name="vp_cancelled">"تم إلغاء الاستيراد"</string>
+    <string name="vp_speaker">"الصوت %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"هل تريد حذف هذه الحزمة وجميع أصواتها من التطبيق؟"</string>
+    <string name="vp_source">"حزمة صوت مستوردة"</string>
+    <string name="vp_title">"اختيار الصوت"</string>
+    <string name="vp_reading">"القراءة بصوت دون اتصال"</string>
+    <string name="vp_in_use">"الحزمة قيد الاستخدام. أغلق القارئ أو أوقف المعاينة قبل حذفها."</string>
+    <string name="vp_deleted">"تم حذف حزمة الصوت"</string>
+    <string name="vp_auto">"يتم اكتشاف اللغات تلقائيًا بعد الاستيراد. تُحفظ الحزمة متعددة اللغات مرة واحدة فقط."</string>
+    <string name="vp_error_graph">"أنواع البيانات الداخلية للنموذج غير متوافقة. جرّب إصدارًا آخر، مثل الحزمة غير FP16."</string>
+    <string name="vp_copy_url">"نسخ رابط تنزيل الحزم الصوتية"</string>
+</resources>

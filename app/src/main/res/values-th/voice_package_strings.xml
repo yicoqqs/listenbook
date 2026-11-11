@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"นำเข้าไฟล์"</string>
+    <string name="vp_address">"ดาวน์โหลดจาก URL"</string>
+    <string name="vp_hint">"รองรับแพ็กเกจ sherpa-onnx VITS / Kokoro หรือ Matcha แบบครบชุด (.zip, .tar.bz2, .tar.gz, .tar) โดยตรวจสอบภาษาและไฟล์ที่จำเป็น ไฟล์ .pt หรือ .onnx เพียงไฟล์เดียวไม่เพียงพอ"</string>
+    <string name="vp_extract">"กำลังแตกไฟล์แพ็กเกจเสียง…"</string>
+    <string name="vp_validate">"กำลังตรวจสอบภาษาและทดสอบโมเดล…"</string>
+    <string name="vp_done">"แพ็กเกจเสียงพร้อมใช้งาน"</string>
+    <string name="vp_error_language">"แพ็กเกจไม่ถูกต้อง: ภาษาไม่ตรงกับภาษาที่เลือก"</string>
+    <string name="vp_error_unknown">"แพ็กเกจไม่ถูกต้อง: ไม่สามารถยืนยันภาษาของโมเดลได้"</string>
+    <string name="vp_error_invalid">"แพ็กเกจไม่ถูกต้องหรือไม่รองรับ โปรดใช้ VITS / Kokoro หรือ Matcha ที่เข้ากันได้"</string>
+    <string name="vp_error_incomplete">"แพ็กเกจไม่ถูกต้อง: ขาดโมเดลหรือพจนานุกรมที่จำเป็น"</string>
+    <string name="vp_error_duplicate">"นำเข้าแพ็กเกจเสียงนี้แล้ว"</string>
+    <string name="vp_error_storage">"พื้นที่จัดเก็บไม่พอหรือแพ็กเกจใหญ่เกินไป"</string>
+    <string name="vp_error_url">"ป้อนลิงก์ HTTPS โดยตรงไปยังแพ็กเกจแบบครบชุด"</string>
+    <string name="vp_cancelled">"ยกเลิกการนำเข้าแล้ว"</string>
+    <string name="vp_speaker">"เสียง %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"ลบแพ็กเกจนี้และเสียงทั้งหมดในแพ็กเกจออกจากแอปหรือไม่"</string>
+    <string name="vp_source">"แพ็กเกจเสียงที่นำเข้า"</string>
+    <string name="vp_title">"เลือกเสียง"</string>
+    <string name="vp_reading">"กำลังอ่านด้วยเสียงออฟไลน์"</string>
+    <string name="vp_in_use">"แพ็กเกจนี้กำลังใช้งาน โปรดออกจากหน้าอ่านหรือหยุดตัวอย่างเสียงก่อนลบ"</string>
+    <string name="vp_deleted">"ลบแพ็กเกจเสียงแล้ว"</string>
+    <string name="vp_auto">"ตรวจหาภาษาและจัดหมวดหมู่โดยอัตโนมัติหลังนำเข้า แพ็กเกจหลายภาษาจะถูกบันทึกเพียงครั้งเดียว"</string>
+    <string name="vp_error_graph">"ชนิดข้อมูลภายในโมเดลไม่เข้ากัน โปรดลองโมเดลรุ่นอื่น เช่น แพ็กเกจที่ไม่ใช่ FP16"</string>
+    <string name="vp_copy_url">"คัดลอกลิงก์ดาวน์โหลดแพ็กเกจเสียง"</string>
+</resources>

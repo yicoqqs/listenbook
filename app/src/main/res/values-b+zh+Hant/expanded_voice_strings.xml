@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"支援原文朗讀，暫不支援翻譯為此語言"</string>
+    <string name="vp_original_unknown">"無法確認這段文字的語言，已停在目前位置。"</string>
+    <string name="vp_speaker_hint">"共 %1$d 種音色 · 點卡片選擇，點播放試聽"</string>
+    <string name="vp_search_speaker">"搜尋音色編號"</string>
+    <string name="vp_no_speaker">"找不到符合的音色"</string>
+    <string name="vp_voice_number">"音色 %1$d"</string>
+    <string name="vp_voice_count">"%1$d 種音色"</string>
+    <string name="vp_choose_speaker">"選擇音色"</string>
+    <string name="vp_original_voice_hint">"依語種選擇音色，原文朗讀時自動切換"</string>
+</resources>

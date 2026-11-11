@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"My library"</string>
+    <string name="models_title">"Offline translation models"</string>
+    <string name="models_subtitle">"Download the languages you need for offline translation."</string>
+    <string name="models_usage">"Storage used: %1$s"</string>
+    <string name="models_count">"%1$d language models downloaded"</string>
+    <string name="models_download">"Download"</string>
+    <string name="models_delete">"Delete"</string>
+    <string name="models_retry">"Retry"</string>
+    <string name="models_downloading">"Downloading. Keep your connection available…"</string>
+    <string name="models_deleting">"Deleting…"</string>
+    <string name="models_ready">"Downloaded"</string>
+    <string name="models_missing">"Not downloaded"</string>
+    <string name="models_english">"No separate download needed"</string>
+    <string name="models_chinese">"Shared by Simplified and Traditional Chinese"</string>
+    <string name="models_wifi">"Download over Wi-Fi only"</string>
+    <string name="models_wifi_hint">"Changes apply to new downloads, not downloads already in progress."</string>
+    <string name="models_delete_title">"Delete the %1$s model?"</string>
+    <string name="models_delete_message">"Offline translation involving this language will require another download. Your books, original text and reading progress will be kept."</string>
+    <string name="models_busy">"Model in use or busy. Pause translated reading and try again later."</string>
+    <string name="models_error">"Operation failed. Tap to retry"</string>
+    <string name="models_approx">"About 30 MB"</string>
+    <string name="models_loading">"Loading models…"</string>
+    <string name="models_languages">"Language models"</string>
+    <string name="models_info">"English is the intermediate language and needs no separate download. Translation models do not include reading voices. Sizes are estimates before download and measured file sizes afterward."</string>
+    <string name="models_back">"Back"</string>
+    <string name="models_reading_download">"Downloading offline languages: %1$s"</string>
+    <string name="models_needed">"Download required: %1$s, about %2$d MB. Translation works offline afterward. Book text is processed on this device."</string>
+</resources>

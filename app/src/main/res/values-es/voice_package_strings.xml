@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"Importar archivo"</string>
+    <string name="vp_address">"Descargar desde URL"</string>
+    <string name="vp_hint">"Paquetes completos sherpa-onnx VITS / Kokoro o Matcha (.zip, .tar.bz2, .tar.gz, .tar). Se verifican idioma y archivos. Un archivo .pt u .onnx solo no basta."</string>
+    <string name="vp_extract">"Extrayendo paquete de voz…"</string>
+    <string name="vp_validate">"Comprobando idioma y probando modelo…"</string>
+    <string name="vp_done">"Paquete de voz listo"</string>
+    <string name="vp_error_language">"Paquete no válido: el idioma no coincide."</string>
+    <string name="vp_error_unknown">"Paquete no válido: no se puede verificar el idioma del modelo."</string>
+    <string name="vp_error_invalid">"Paquete no válido o no compatible. Usa un paquete VITS / Kokoro o Matcha compatible."</string>
+    <string name="vp_error_incomplete">"Paquete no válido: faltan archivos del modelo o diccionarios."</string>
+    <string name="vp_error_duplicate">"Este paquete de voz ya se ha importado."</string>
+    <string name="vp_error_storage">"Espacio insuficiente o paquete demasiado grande."</string>
+    <string name="vp_error_url">"Introduce un enlace HTTPS directo al paquete completo."</string>
+    <string name="vp_cancelled">"Importación cancelada"</string>
+    <string name="vp_speaker">"Voz %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"¿Eliminar este paquete y todas sus voces de la aplicación?"</string>
+    <string name="vp_source">"Paquete de voz importado"</string>
+    <string name="vp_title">"Elegir voz"</string>
+    <string name="vp_reading">"Lectura con voz sin conexión"</string>
+    <string name="vp_in_use">"Este paquete está en uso. Sal del lector o detén la muestra antes de eliminarlo."</string>
+    <string name="vp_deleted">"Paquete de voz eliminado"</string>
+    <string name="vp_auto">"Los idiomas se detectan automáticamente al importar. Cada paquete multilingüe se guarda una sola vez."</string>
+    <string name="vp_error_graph">"Los tipos de datos internos no son compatibles. Prueba otra versión del modelo, por ejemplo sin FP16."</string>
+    <string name="vp_copy_url">"Copiar enlace de descarga de voces"</string>
+</resources>

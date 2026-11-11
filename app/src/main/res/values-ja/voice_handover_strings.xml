@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_switch_loading">"新しい音声を準備中です。読み上げは続きます。"</string>
+    <string name="voice_switch_ready">"準備できました。文の区切りで切り替えます。"</string>
+    <string name="voice_switch_failed">"切り替えられませんでした。前の音声を維持します。"</string>
+</resources>

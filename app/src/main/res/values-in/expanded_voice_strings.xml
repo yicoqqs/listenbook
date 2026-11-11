@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"Hanya membaca teks asli. Terjemahan ke bahasa ini belum tersedia."</string>
+    <string name="vp_original_unknown">"Bahasa tidak dapat dikenali. Pembacaan dijeda di posisi ini."</string>
+    <string name="vp_speaker_hint">"%1$d suara · ketuk kartu untuk memilih, tombol putar untuk mendengar"</string>
+    <string name="vp_search_speaker">"Cari nomor suara"</string>
+    <string name="vp_no_speaker">"Tidak ada suara yang cocok"</string>
+    <string name="vp_voice_number">"Suara %1$d"</string>
+    <string name="vp_voice_count">"%1$d suara"</string>
+    <string name="vp_choose_speaker">"Pilih suara"</string>
+    <string name="vp_original_voice_hint">"Pilih suara per bahasa. Pembacaan asli beralih secara otomatis."</string>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chapter_progress">"บทที่ %1$d / %2$d · บทนี้ %3$.1f%%"</string>
+</resources>

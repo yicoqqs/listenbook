@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"केवल मूल पाठ पढ़ें। इस भाषा में अनुवाद उपलब्ध नहीं है।"</string>
+    <string name="vp_original_unknown">"भाषा पहचानी नहीं जा सकी। इसी स्थान पर पढ़ना रोक दिया गया है।"</string>
+    <string name="vp_speaker_hint">"%1$d आवाज़ें · चुनने के लिए कार्ड, सुनने के लिए प्ले दबाएँ"</string>
+    <string name="vp_search_speaker">"आवाज़ संख्या खोजें"</string>
+    <string name="vp_no_speaker">"कोई मेल खाती आवाज़ नहीं"</string>
+    <string name="vp_voice_number">"आवाज़ %1$d"</string>
+    <string name="vp_voice_count">"%1$d आवाज़ें"</string>
+    <string name="vp_choose_speaker">"आवाज़ चुनें"</string>
+    <string name="vp_original_voice_hint">"भाषा के अनुसार आवाज़ चुनें। मूल पाठ पढ़ते समय आवाज़ अपने आप बदलती है।"</string>
+</resources>

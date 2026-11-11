@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"Datei importieren"</string>
+    <string name="vp_address">"Über URL herunterladen"</string>
+    <string name="vp_hint">"Vollständige sherpa-onnx VITS / Kokoro- oder Matcha-Pakete (.zip, .tar.bz2, .tar.gz, .tar). Sprache und benötigte Dateien werden geprüft. Eine einzelne .pt- oder .onnx-Datei reicht nicht aus."</string>
+    <string name="vp_extract">"Sprachpaket wird entpackt…"</string>
+    <string name="vp_validate">"Sprache wird geprüft und Modell getestet…"</string>
+    <string name="vp_done">"Sprachpaket bereit"</string>
+    <string name="vp_error_language">"Ungültiges Paket: Die Sprache stimmt nicht überein."</string>
+    <string name="vp_error_unknown">"Ungültiges Paket: Die Modellsprache kann nicht geprüft werden."</string>
+    <string name="vp_error_invalid">"Ungültiges oder nicht unterstütztes Paket. Bitte kompatibles VITS / Kokoro oder Matcha verwenden."</string>
+    <string name="vp_error_incomplete">"Ungültiges Paket: Benötigte Modell- oder Wörterbuchdateien fehlen."</string>
+    <string name="vp_error_duplicate">"Dieses Sprachpaket wurde bereits importiert."</string>
+    <string name="vp_error_storage">"Zu wenig Speicherplatz oder Paket zu groß."</string>
+    <string name="vp_error_url">"Direkten HTTPS-Link zum vollständigen Sprachpaket eingeben."</string>
+    <string name="vp_cancelled">"Import abgebrochen"</string>
+    <string name="vp_speaker">"Stimme %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"Dieses Paket und alle enthaltenen Stimmen aus der App löschen?"</string>
+    <string name="vp_source">"Importiertes Sprachpaket"</string>
+    <string name="vp_title">"Stimme auswählen"</string>
+    <string name="vp_reading">"Lesen mit Offline-Stimme"</string>
+    <string name="vp_in_use">"Dieses Paket wird verwendet. Schließen Sie den Reader oder stoppen Sie die Vorschau vor dem Löschen."</string>
+    <string name="vp_deleted">"Sprachpaket gelöscht"</string>
+    <string name="vp_auto">"Sprachen werden nach dem Import automatisch erkannt. Mehrsprachige Pakete werden nur einmal gespeichert."</string>
+    <string name="vp_error_graph">"Die internen Datentypen des Modells sind nicht kompatibel. Versuchen Sie eine andere Version, etwa ohne FP16."</string>
+    <string name="vp_copy_url">"Downloadadresse für Sprachpakete kopieren"</string>
+</resources>

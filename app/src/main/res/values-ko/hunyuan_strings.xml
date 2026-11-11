@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">하나의 모델로 지원 언어를 직접 번역합니다. 다운로드 후 완전히 오프라인으로 사용합니다.</string>
+    <string name="hy_languages">지원 언어</string>
+    <string name="hy_import">모델 가져오기</string>
+    <string name="hy_checking">모델 확인 중…</string>
+    <string name="hy_invalid_model">지원 모델과 다른 파일입니다. 이 화면에 표시된 공식 버전을 가져오세요.</string>
+    <string name="hy_network_error">다운로드하지 못했습니다. 연결을 확인하거나 모델 파일을 가져오세요.</string>
+    <string name="hy_cancelled">취소됨</string>
+    <string name="hy_wifi_required">Wi-Fi에 연결하거나 Wi-Fi 전용 다운로드를 끄세요.</string>
+    <string name="hy_device_error">이 기기에서는 모델을 실행할 수 없습니다.</string>
+    <string name="hy_translate_error">번역하지 못했습니다. 다시 시도하거나 글을 줄이세요.</string>
+    <string name="hy_delete_message">모델을 삭제하면 번역할 때 다시 다운로드해야 합니다. 책과 음성 및 읽기 위치는 유지됩니다.</string>
+    <string name="hy_help">원문 읽기는 번역하지 않습니다. 다른 언어는 기기의 HY-MT로 번역한 뒤 읽습니다. 번역 모델과 음성은 별도로 관리합니다.</string>
+    <string name="hy_cleanup">이전 번역 팩 삭제</string>
+    <string name="hy_cleanup_message">이전 ML Kit 언어 팩을 삭제할까요? HY-MT는 사용하지 않습니다. 책과 음성 및 읽기 위치는 유지됩니다.</string>
+    <string name="hy_copy_url">모델 다운로드 링크 복사</string>
+    <string name="hy_copied">다운로드 링크를 복사했습니다</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

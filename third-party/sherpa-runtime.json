@@ -1,0 +1,12 @@
+{
+  "version": "1.13.3",
+  "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.3/sherpa-onnx-1.13.3.aar",
+  "sha256": "243ad797a3b6e75ebbeaf7a2ab4aec0777e7d71b730685abb762a120940b07b6",
+  "files": {
+    "app\\libs\\sherpa-classes.jar": "3f85f83d0dd325aa19f29f76f27d711e23b130e31ff274924f4f7c2b27e50fec",
+    "app\\src\\main\\jniLibs\\arm64-v8a\\libonnxruntime.so": "4d2318b3849abb8862133d3068fc7e807ed8b2671cc6d83657fff2fcb9e1caad",
+    "app\\src\\main\\jniLibs\\arm64-v8a\\libsherpa-onnx-c-api.so": "aac6f369f1985c96c788e8e64883ecc3bc9915bbc158ec86eb998946f0449ddd",
+    "app\\src\\main\\jniLibs\\arm64-v8a\\libsherpa-onnx-cxx-api.so": "1abbb2999f99ab971a072f9bae4eafe5bf1ce3a7e59caf098b0ad2fc05e679c1",
+    "app\\src\\main\\jniLibs\\arm64-v8a\\libsherpa-onnx-jni.so": "97bf245b98b37ff69042100573d5e6c1c7bc4e72b5f178f6dcf5a04c61b8aece"
+  }
+}

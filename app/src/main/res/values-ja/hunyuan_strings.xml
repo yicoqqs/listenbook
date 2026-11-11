@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">1つのモデルで対応言語を直接翻訳できます。ダウンロード後は完全オフラインです。</string>
+    <string name="hy_languages">対応言語</string>
+    <string name="hy_import">モデルを読み込む</string>
+    <string name="hy_checking">モデルを確認中…</string>
+    <string name="hy_invalid_model">対応モデルと異なるファイルです。この画面に記載の公式版を読み込んでください。</string>
+    <string name="hy_network_error">ダウンロードに失敗しました。接続を確認して再試行するか、モデルを読み込んでください。</string>
+    <string name="hy_cancelled">キャンセル済み</string>
+    <string name="hy_wifi_required">Wi-Fi に接続するか、Wi-Fi のみの設定をオフにしてください。</string>
+    <string name="hy_device_error">この端末ではモデルを実行できません。</string>
+    <string name="hy_translate_error">翻訳できませんでした。再試行するか文章を短くしてください。</string>
+    <string name="hy_delete_message">モデルを削除すると翻訳時に再ダウンロードが必要です。本、音声、読書位置は保持されます。</string>
+    <string name="hy_help">原文読み上げでは翻訳しません。他の言語では端末上の HY-MT で翻訳してから読み上げます。翻訳モデルと音声は別に管理します。</string>
+    <string name="hy_cleanup">旧翻訳パックを削除</string>
+    <string name="hy_cleanup_message">旧 ML Kit 言語パックを削除しますか？HY-MT では使用しません。本、音声、読書位置は保持されます。</string>
+    <string name="hy_copy_url">モデルのダウンロードリンクをコピー</string>
+    <string name="hy_copied">リンクをコピーしました</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

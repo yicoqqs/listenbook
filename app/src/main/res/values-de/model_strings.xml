@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"Mein Bereich"</string>
+    <string name="models_title">"Offline-Übersetzungsmodelle"</string>
+    <string name="models_subtitle">"Laden Sie benötigte Sprachen zum Offline-Übersetzen herunter."</string>
+    <string name="models_usage">"Belegter Speicher: %1$s"</string>
+    <string name="models_count">"%1$d Sprachmodelle heruntergeladen"</string>
+    <string name="models_download">"Laden"</string>
+    <string name="models_delete">"Löschen"</string>
+    <string name="models_retry">"Erneut"</string>
+    <string name="models_downloading">"Wird geladen. Verbindung bitte beibehalten…"</string>
+    <string name="models_deleting">"Wird gelöscht…"</string>
+    <string name="models_ready">"Heruntergeladen"</string>
+    <string name="models_missing">"Nicht geladen"</string>
+    <string name="models_english">"Kein separater Download nötig"</string>
+    <string name="models_chinese">"Für vereinfachtes und traditionelles Chinesisch"</string>
+    <string name="models_wifi">"Nur über WLAN herunterladen"</string>
+    <string name="models_wifi_hint">"Änderungen gelten nur für neue Downloads."</string>
+    <string name="models_delete_title">"Modell %1$s löschen?"</string>
+    <string name="models_delete_message">"Offline-Übersetzungen mit dieser Sprache erfordern einen erneuten Download. Bücher, Originaltexte und Lesefortschritt bleiben erhalten."</string>
+    <string name="models_busy">"Modell wird verwendet. Übersetztes Vorlesen pausieren und später erneut versuchen."</string>
+    <string name="models_error">"Fehler. Zum Wiederholen tippen"</string>
+    <string name="models_approx">"Etwa 30 MB"</string>
+    <string name="models_loading">"Modelle werden geladen…"</string>
+    <string name="models_languages">"Sprachmodelle"</string>
+    <string name="models_info">"Englisch ist die Zwischensprache und benötigt keinen separaten Download. Modelle enthalten keine Stimmen. Größen sind vor dem Download geschätzt und danach gemessen."</string>
+    <string name="models_back">"Zurück"</string>
+    <string name="models_reading_download">"Offline-Sprachen werden geladen: %1$s"</string>
+    <string name="models_needed">"Benötigt: %1$s, etwa %2$d MB. Danach ist Offline-Übersetzung möglich. Der Buchtext wird auf diesem Gerät verarbeitet."</string>
+</resources>

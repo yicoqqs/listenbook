@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"오프라인 음성"</string>
+    <string name="speech_intro">"15개 언어의 오프라인 음성 상태를 확인하고 미리 듣거나 음성 팩을 관리하세요."</string>
+    <string name="speech_hint">"언어를 펼쳐 음성을 확인하고 재생 버튼으로 미리 들으세요."</string>
+    <string name="speech_ready_count">"오프라인 음성 %1$d개 사용 가능"</string>
+    <string name="speech_missing">"사용 가능한 오프라인 음성 없음"</string>
+    <string name="speech_checking">"음성 확인 중…"</string>
+    <string name="speech_builtin">"앱 내장"</string>
+    <string name="speech_builtin_hint">"앱에 포함됨"</string>
+    <string name="speech_manage">"음성 관리"</string>
+    <string name="speech_install">"음성 다운로드"</string>
+    <string name="speech_selected">"선택됨"</string>
+    <string name="speech_next_play">"이 언어의 기본 음성을 저장했습니다."</string>
+    <string name="speech_engines">"음성 엔진 선택"</string>
+    <string name="speech_settings">"시스템 음성 설정"</string>
+    <string name="speech_unavailable">"음성 관리를 열 수 없습니다. 시스템 설정에서 음성 팩을 관리하세요."</string>
+    <string name="speech_no_engines">"사용 가능한 시스템 음성 엔진이 설치되지 않았습니다."</string>
+    <string name="speech_info">"음성 팩은 소리를 내고 번역 모델은 텍스트를 번역합니다. 시스템 음성 팩은 해당 엔진에서 다운로드하거나 삭제하며, 돌아오면 상태를 새로 확인합니다."</string>
+    <string name="speech_home_hint">"필요한 언어와 음성으로 오프라인 독서."</string>
+    <string name="speech_not_downloaded">"오프라인 음성 팩이 다운로드되지 않음"</string>
+    <string name="speech_not_offered">"현재 엔진에 해당 오프라인 음성이 없음"</string>
+    <string name="speech_check_engine">"음성 엔진 보기"</string>
+    <string name="speech_delete">"음성 팩 삭제"</string>
+    <string name="speech_redownload">"다시 다운로드"</string>
+    <string name="speech_engine_instruction">"엔진 페이지에서 %1$s를 선택하고 다음 작업을 하세요: %2$s."</string>
+    <string name="speech_engine_hint">"다운로드는 여기서 시작합니다. 삭제와 재다운로드는 엔진 페이지에서 진행합니다."</string>
+    <string name="speech_downloading">"엔진 다운로드를 기다리는 중…"</string>
+    <string name="speech_download_failed">"음성 설치가 아직 완료되지 않았습니다. 연결을 확인하고 다시 시도하세요."</string>
+    <string name="speech_package_ready">"사용 가능"</string>
+</resources>

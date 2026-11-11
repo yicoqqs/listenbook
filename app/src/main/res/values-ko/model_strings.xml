@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"내 정보"</string>
+    <string name="models_title">"오프라인 번역 모델"</string>
+    <string name="models_subtitle">"필요한 언어를 다운로드하면 오프라인으로 번역할 수 있습니다."</string>
+    <string name="models_usage">"사용 공간: %1$s"</string>
+    <string name="models_count">"언어 모델 %1$d개 다운로드됨"</string>
+    <string name="models_download">"다운로드"</string>
+    <string name="models_delete">"삭제"</string>
+    <string name="models_retry">"다시 시도"</string>
+    <string name="models_downloading">"다운로드 중. 연결을 유지해 주세요…"</string>
+    <string name="models_deleting">"삭제 중…"</string>
+    <string name="models_ready">"다운로드됨"</string>
+    <string name="models_missing">"다운로드 안 됨"</string>
+    <string name="models_english">"별도 다운로드 불필요"</string>
+    <string name="models_chinese">"중국어 간체와 번체가 공유"</string>
+    <string name="models_wifi">"Wi-Fi에서만 다운로드"</string>
+    <string name="models_wifi_hint">"변경 사항은 새 다운로드에만 적용됩니다."</string>
+    <string name="models_delete_title">"%1$s 모델을 삭제할까요?"</string>
+    <string name="models_delete_message">"이 언어의 오프라인 번역에는 다시 다운로드가 필요합니다. 책, 원문, 읽기 진행 상황은 유지됩니다."</string>
+    <string name="models_busy">"모델 사용 중입니다. 번역 읽기를 일시 정지하고 나중에 다시 시도하세요."</string>
+    <string name="models_error">"실패했습니다. 눌러서 다시 시도"</string>
+    <string name="models_approx">"약 30 MB"</string>
+    <string name="models_loading">"모델 불러오는 중…"</string>
+    <string name="models_languages">"언어 모델"</string>
+    <string name="models_info">"영어는 중간 언어이므로 별도 다운로드가 필요 없습니다. 번역 모델에는 음성이 포함되지 않습니다. 다운로드 전에는 예상 크기, 이후에는 파일 크기를 표시합니다."</string>
+    <string name="models_back">"뒤로"</string>
+    <string name="models_reading_download">"오프라인 언어 다운로드 중: %1$s"</string>
+    <string name="models_needed">"필요한 언어: %1$s, 약 %2$d MB. 이후 오프라인 번역이 가능합니다. 본문은 이 기기에서 처리됩니다."</string>
+</resources>

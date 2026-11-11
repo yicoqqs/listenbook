@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"원문 읽기만 지원합니다. 이 언어로의 번역은 지원하지 않습니다."</string>
+    <string name="vp_original_unknown">"언어를 확인할 수 없어 현재 위치에서 일시정지했습니다."</string>
+    <string name="vp_speaker_hint">"음성 %1$d개 · 카드로 선택, 재생으로 미리 듣기"</string>
+    <string name="vp_search_speaker">"음성 번호 검색"</string>
+    <string name="vp_no_speaker">"일치하는 음성이 없습니다"</string>
+    <string name="vp_voice_number">"음성 %1$d"</string>
+    <string name="vp_voice_count">"음성 %1$d개"</string>
+    <string name="vp_choose_speaker">"음성 선택"</string>
+    <string name="vp_original_voice_hint">"언어별 음성을 선택하세요. 원문 읽기는 자동으로 전환됩니다."</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"Импорт файла"</string>
+    <string name="vp_address">"Скачать по ссылке"</string>
+    <string name="vp_hint">"Полные пакеты sherpa-onnx VITS / Kokoro или Matcha (.zip, .tar.bz2, .tar.gz, .tar). Проверяются язык и файлы. Одного файла .pt или .onnx недостаточно."</string>
+    <string name="vp_extract">"Распаковка голосового пакета…"</string>
+    <string name="vp_validate">"Проверка языка и тестирование модели…"</string>
+    <string name="vp_done">"Голосовой пакет готов"</string>
+    <string name="vp_error_language">"Недопустимый пакет: язык не совпадает."</string>
+    <string name="vp_error_unknown">"Недопустимый пакет: невозможно проверить язык модели."</string>
+    <string name="vp_error_invalid">"Недопустимый или неподдерживаемый пакет. Используйте совместимый VITS / Kokoro или Matcha."</string>
+    <string name="vp_error_incomplete">"Недопустимый пакет: отсутствуют файлы модели или словари."</string>
+    <string name="vp_error_duplicate">"Этот голосовой пакет уже импортирован."</string>
+    <string name="vp_error_storage">"Недостаточно памяти или пакет слишком большой."</string>
+    <string name="vp_error_url">"Введите прямую HTTPS-ссылку на полный пакет."</string>
+    <string name="vp_cancelled">"Импорт отменён"</string>
+    <string name="vp_speaker">"Голос %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"Удалить этот пакет и все его голоса из приложения?"</string>
+    <string name="vp_source">"Импортированный голосовой пакет"</string>
+    <string name="vp_title">"Выбрать голос"</string>
+    <string name="vp_reading">"Чтение офлайн-голосом"</string>
+    <string name="vp_in_use">"Пакет используется. Закройте экран чтения или остановите прослушивание перед удалением."</string>
+    <string name="vp_deleted">"Голосовой пакет удалён"</string>
+    <string name="vp_auto">"После импорта языки определяются автоматически. Многоязычный пакет хранится в одном экземпляре."</string>
+    <string name="vp_error_graph">"Несовместимые внутренние типы данных модели. Попробуйте другую версию, например без FP16."</string>
+    <string name="vp_copy_url">"Копировать ссылку для загрузки голосов"</string>
+</resources>

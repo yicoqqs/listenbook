@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"Voix hors ligne"</string>
+    <string name="speech_intro">"Gérez les voix des 15 variantes linguistiques : état, écoute et gestion des packs."</string>
+    <string name="speech_hint">"Ouvrez une langue pour voir les voix. Touchez lecture pour écouter."</string>
+    <string name="speech_ready_count">"%1$d voix hors ligne disponibles"</string>
+    <string name="speech_missing">"Aucune voix hors ligne disponible"</string>
+    <string name="speech_checking">"Vérification des voix…"</string>
+    <string name="speech_builtin">"Intégrées à l’application"</string>
+    <string name="speech_builtin_hint">"Incluses dans l’application"</string>
+    <string name="speech_manage">"Gérer les voix"</string>
+    <string name="speech_install">"Télécharger des voix"</string>
+    <string name="speech_selected">"Sélectionnée"</string>
+    <string name="speech_next_play">"Voix préférée enregistrée pour cette langue."</string>
+    <string name="speech_engines">"Choisir un moteur vocal"</string>
+    <string name="speech_settings">"Paramètres vocaux du système"</string>
+    <string name="speech_unavailable">"Impossible d’ouvrir la gestion vocale. Utilisez les paramètres système."</string>
+    <string name="speech_no_engines">"Aucun moteur vocal système utilisable n’est installé."</string>
+    <string name="speech_info">"Les packs vocaux produisent la parole et les modèles traduisent le texte. Chaque moteur gère ses téléchargements et suppressions. L’état est actualisé à votre retour."</string>
+    <string name="speech_home_hint">"Lecture hors ligne, langues et voix selon vos besoins."</string>
+    <string name="speech_not_downloaded">"Pack vocal hors ligne non téléchargé"</string>
+    <string name="speech_not_offered">"Les moteurs actuels ne proposent pas de voix hors ligne correspondante"</string>
+    <string name="speech_check_engine">"Voir les moteurs vocaux"</string>
+    <string name="speech_delete">"Supprimer le pack vocal"</string>
+    <string name="speech_redownload">"Télécharger à nouveau"</string>
+    <string name="speech_engine_instruction">"Dans la page du moteur, choisissez %1$s pour effectuer : %2$s."</string>
+    <string name="speech_engine_hint">"Le téléchargement démarre ici. La suppression et le nouveau téléchargement nécessitent la page du moteur."</string>
+    <string name="speech_downloading">"En attente du téléchargement par le moteur…"</string>
+    <string name="speech_download_failed">"Les données vocales ne sont pas encore installées. Vérifiez la connexion et réessayez."</string>
+    <string name="speech_package_ready">"Disponible"</string>
+</resources>

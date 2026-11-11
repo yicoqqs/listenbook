@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_language_filter">"केवल पढ़ने की भाषा के लिए उपलब्ध आवाज़ें दिखाई जाती हैं।"</string>
+    <string name="voice_language_missing">"इस भाषा के लिए कोई सिस्टम आवाज़ उपलब्ध नहीं है।"</string>
+</resources>

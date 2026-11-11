@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"原文の読み上げ専用。この言語への翻訳は未対応です。"</string>
+    <string name="vp_original_unknown">"言語を識別できません。この位置で一時停止しました。"</string>
+    <string name="vp_speaker_hint">"%1$d 種類の音声 · カードで選択、再生で試聴"</string>
+    <string name="vp_search_speaker">"音声番号を検索"</string>
+    <string name="vp_no_speaker">"一致する音声がありません"</string>
+    <string name="vp_voice_number">"音声 %1$d"</string>
+    <string name="vp_voice_count">"%1$d 種類の音声"</string>
+    <string name="vp_choose_speaker">"音声を選ぶ"</string>
+    <string name="vp_original_voice_hint">"言語ごとに音声を選択。原文読み上げ時は自動で切り替わります。"</string>
+</resources>

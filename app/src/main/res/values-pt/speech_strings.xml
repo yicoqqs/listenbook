@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"Vozes offline"</string>
+    <string name="speech_intro">"Gerencie vozes de 15 variantes de idioma: status, amostras e ações dos pacotes."</string>
+    <string name="speech_hint">"Abra um idioma para ver as vozes. Toque em reproduzir para ouvir."</string>
+    <string name="speech_ready_count">"%1$d vozes offline disponíveis"</string>
+    <string name="speech_missing">"Nenhuma voz offline disponível"</string>
+    <string name="speech_checking">"Verificando vozes…"</string>
+    <string name="speech_builtin">"Integradas ao app"</string>
+    <string name="speech_builtin_hint">"Incluídas no app"</string>
+    <string name="speech_manage">"Gerenciar vozes"</string>
+    <string name="speech_install">"Baixar vozes"</string>
+    <string name="speech_selected">"Selecionada"</string>
+    <string name="speech_next_play">"Voz preferida salva para este idioma."</string>
+    <string name="speech_engines">"Escolher mecanismo de voz"</string>
+    <string name="speech_settings">"Configurações de voz do sistema"</string>
+    <string name="speech_unavailable">"Não foi possível abrir o gerenciamento de voz. Use as configurações do sistema."</string>
+    <string name="speech_no_engines">"Nenhum mecanismo de voz do sistema disponível está instalado."</string>
+    <string name="speech_info">"Os pacotes de voz geram fala; os modelos traduzem texto. Cada mecanismo gerencia downloads e exclusões. O status é atualizado ao retornar."</string>
+    <string name="speech_home_hint">"Leitura offline, com idiomas e vozes conforme necessário."</string>
+    <string name="speech_not_downloaded">"Pacote de voz offline não baixado"</string>
+    <string name="speech_not_offered">"Os mecanismos atuais não oferecem uma voz offline compatível"</string>
+    <string name="speech_check_engine">"Ver mecanismos de voz"</string>
+    <string name="speech_delete">"Excluir pacote de voz"</string>
+    <string name="speech_redownload">"Baixar novamente"</string>
+    <string name="speech_engine_instruction">"Na página do mecanismo, escolha %1$s para: %2$s."</string>
+    <string name="speech_engine_hint">"O download começa aqui. A exclusão e o novo download ainda exigem a página do mecanismo."</string>
+    <string name="speech_downloading">"Aguardando o download pelo mecanismo…"</string>
+    <string name="speech_download_failed">"Os dados de voz ainda não foram instalados. Verifique a conexão e tente novamente."</string>
+    <string name="speech_package_ready">"Disponível"</string>
+</resources>

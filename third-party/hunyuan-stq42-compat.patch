@@ -1,0 +1,24 @@
+--- a/ggml/src/gguf.cpp
++++ b/ggml/src/gguf.cpp
+@@ -700,6 +700,21 @@
+         // tensor type
+         {
+             ok = ok && gr.read(info.t.type);
++#ifdef VOICETXT_HYMT_STQ42
++            // VoiceTxt: the checksum-pinned HY-MT Sherry file predates upstream Q2_0.
++            // Interpret the legacy descriptor in memory; never rewrite the GGUF or tensor bytes.
++            if (ok && info.t.type == GGML_TYPE_Q2_0) {
++                const int64_t arch = gguf_find_key(ctx, "general.architecture");
++                const int64_t name = gguf_find_key(ctx, "general.name");
++                if (arch >= 0 && name >= 0 && gguf_get_kv_type(ctx, arch) == GGUF_TYPE_STRING &&
++                    gguf_get_kv_type(ctx, name) == GGUF_TYPE_STRING &&
++                    std::string(gguf_get_val_str(ctx, arch)) == "hunyuan-dense" &&
++                    std::string(gguf_get_val_str(ctx, name)) == "MT1.5 Sherry Stride16") {
++                    info.t.type = GGML_TYPE_STQ1_0;
++                }
++            }
++#endif
++
+ 
+             // check that tensor type is within defined range
+             if (info.t.type < 0 || info.t.type >= GGML_TYPE_COUNT) {

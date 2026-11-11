@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"Офлайн-голоса"</string>
+    <string name="speech_intro">"Управляйте голосами для 15 языковых вариантов: статус, прослушивание и действия с пакетами."</string>
+    <string name="speech_hint">"Откройте язык для просмотра голосов. Нажмите воспроизведение для прослушивания."</string>
+    <string name="speech_ready_count">"Доступно офлайн-голосов: %1$d"</string>
+    <string name="speech_missing">"Нет доступных офлайн-голосов"</string>
+    <string name="speech_checking">"Проверка голосов…"</string>
+    <string name="speech_builtin">"Встроены в приложение"</string>
+    <string name="speech_builtin_hint">"Поставляются с приложением"</string>
+    <string name="speech_manage">"Управление голосами"</string>
+    <string name="speech_install">"Загрузить голоса"</string>
+    <string name="speech_selected">"Выбрано"</string>
+    <string name="speech_next_play">"Предпочитаемый голос для этого языка сохранён."</string>
+    <string name="speech_engines">"Выбрать речевой движок"</string>
+    <string name="speech_settings">"Системные настройки речи"</string>
+    <string name="speech_unavailable">"Не удалось открыть управление голосами. Используйте настройки системы."</string>
+    <string name="speech_no_engines">"Нет установленного подходящего системного речевого движка."</string>
+    <string name="speech_info">"Голосовые пакеты озвучивают текст, модели переводят его. Загрузка и удаление голосов выполняются их движком. После возврата статус обновится."</string>
+    <string name="speech_home_hint">"Офлайн-чтение, языки и голоса по необходимости."</string>
+    <string name="speech_not_downloaded">"Офлайн-пакет не загружен"</string>
+    <string name="speech_not_offered">"Текущие движки не предлагают подходящий офлайн-голос"</string>
+    <string name="speech_check_engine">"Посмотреть речевые движки"</string>
+    <string name="speech_delete">"Удалить голосовой пакет"</string>
+    <string name="speech_redownload">"Загрузить повторно"</string>
+    <string name="speech_engine_instruction">"На странице движка выберите %1$s для действия: %2$s."</string>
+    <string name="speech_engine_hint">"Загрузка начинается здесь. Удаление и повторная загрузка требуют страницы движка."</string>
+    <string name="speech_downloading">"Ожидание загрузки движком…"</string>
+    <string name="speech_download_failed">"Голосовые данные ещё не установлены. Проверьте соединение и повторите."</string>
+    <string name="speech_package_ready">"Доступно"</string>
+</resources>

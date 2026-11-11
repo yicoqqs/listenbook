@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"ファイルを読み込む"</string>
+    <string name="vp_address">"URLからダウンロード"</string>
+    <string name="vp_hint">"完全な sherpa-onnx VITS / Kokoro・Matcha パッケージ（.zip、.tar.bz2、.tar.gz、.tar）に対応。言語と必要なファイルを検証します。.pt や .onnx 単体には対応しません。"</string>
+    <string name="vp_extract">"音声パッケージを展開中…"</string>
+    <string name="vp_validate">"言語の確認とモデルの動作テスト中…"</string>
+    <string name="vp_done">"音声パッケージを利用できます"</string>
+    <string name="vp_error_language">"無効なパッケージ：選択した言語と一致しません。"</string>
+    <string name="vp_error_unknown">"無効なパッケージ：対応言語を確認できません。"</string>
+    <string name="vp_error_invalid">"無効または未対応のパッケージです。互換性のある VITS / Kokoro・Matcha を使用してください。"</string>
+    <string name="vp_error_incomplete">"無効なパッケージ：必要なモデルや辞書が不足しています。"</string>
+    <string name="vp_error_duplicate">"この音声パッケージは読み込み済みです。"</string>
+    <string name="vp_error_storage">"空き容量が不足しているか、パッケージが大きすぎます。"</string>
+    <string name="vp_error_url">"完全な音声パッケージの HTTPS ダウンロードURLを入力してください。"</string>
+    <string name="vp_cancelled">"読み込みをキャンセルしました"</string>
+    <string name="vp_speaker">"音声 %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"このパッケージを削除しますか？含まれるすべての音声がアプリから削除されます。"</string>
+    <string name="vp_source">"読み込んだ音声パッケージ"</string>
+    <string name="vp_title">"音声を選択"</string>
+    <string name="vp_reading">"オフライン音声で朗読中"</string>
+    <string name="vp_in_use">"使用中の音声です。朗読画面を閉じるか試聴を停止してから削除してください。"</string>
+    <string name="vp_deleted">"音声パッケージを削除しました"</string>
+    <string name="vp_auto">"読み込み後に言語を自動判別して分類します。多言語パッケージは1つだけ保存します。"</string>
+    <string name="vp_error_graph">"モデル内部のデータ型に互換性がありません。FP16以外など別のモデル版を使用してください。"</string>
+    <string name="vp_copy_url">"音声パッケージのダウンロードURLをコピー"</string>
+</resources>

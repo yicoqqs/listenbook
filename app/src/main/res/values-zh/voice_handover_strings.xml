@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_switch_loading">"正在准备新音色，当前朗读继续"</string>
+    <string name="voice_switch_ready">"新音色已就绪，将在句子间切换"</string>
+    <string name="voice_switch_failed">"音色切换失败，已保留原音色"</string>
+</resources>

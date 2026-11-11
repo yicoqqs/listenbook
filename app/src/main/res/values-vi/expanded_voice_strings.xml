@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"Chỉ đọc nguyên văn. Chưa hỗ trợ dịch sang ngôn ngữ này."</string>
+    <string name="vp_original_unknown">"Không xác định được ngôn ngữ. Đã tạm dừng tại vị trí này."</string>
+    <string name="vp_speaker_hint">"%1$d giọng · chạm thẻ để chọn, nút phát để nghe thử"</string>
+    <string name="vp_search_speaker">"Tìm số giọng đọc"</string>
+    <string name="vp_no_speaker">"Không tìm thấy giọng phù hợp"</string>
+    <string name="vp_voice_number">"Giọng %1$d"</string>
+    <string name="vp_voice_count">"%1$d giọng"</string>
+    <string name="vp_choose_speaker">"Chọn giọng"</string>
+    <string name="vp_original_voice_hint">"Chọn giọng theo ngôn ngữ. Đọc nguyên văn sẽ tự động chuyển giọng."</string>
+</resources>

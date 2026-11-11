@@ -1,0 +1,17 @@
+{
+  "engine": "llama.cpp with STQ1_0 PR 22836",
+  "sourceCommit": "1e411d8f5a1e23525fa3265dfb4bd76265465397",
+  "sourceZipSha256": "c00da0eb14ec628ebd8a2c35ac2e628b429848fec22db6a335d0c80296678d3b",
+  "nativeSha256": "d17a73da2d53f5797e6ed0e50edff560406f0e3904adf6eb488f478d96f665a2",
+  "ndk": "27.3.13750724 (r27d)",
+  "abi": "arm64-v8a",
+  "cpu": "Armv8.2 dotprod + fp16; checked before loading model",
+  "model": "AngelSlim/Hy-MT1.5-1.8B-1.25bit-GGUF",
+  "modelBytes": 461860704,
+  "modelSha256": "93e025c93cc082e73a3f142b757623a8b9cf541c020a8013ca4ee669556860ab",
+  "hfRevision": "1bed36c0a8f5a0eddf77987b02ba66d4c268aca2",
+  "modelscopeFileRevision": "d95cf4d0d1eee82619df809f784176f524e2e0ae",
+  "compatibility": "In-memory GGUF type 42 -> STQ1_0 (43), only hunyuan-dense / MT1.5 Sherry Stride16. Import also requires exact full-file SHA-256. No weight/file modification.",
+  "prompt": "hy_begin_of_sentence + hy_User + instruction/source + hy_Assistant (verified on device); do not use the HF generation_prompt=false placeholder8 for this artifact",
+  "modelBundledInApk": false
+}

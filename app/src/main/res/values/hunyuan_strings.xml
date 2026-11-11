@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">One model translates directly between supported languages, entirely offline.</string>
+    <string name="hy_languages">Supported languages</string>
+    <string name="hy_import">Import model</string>
+    <string name="hy_checking">Checking model…</string>
+    <string name="hy_invalid_model">This file does not match the supported model. Import the official version shown here.</string>
+    <string name="hy_network_error">Download failed. Check your connection and retry, or import the model file.</string>
+    <string name="hy_cancelled">Cancelled</string>
+    <string name="hy_wifi_required">Connect to Wi-Fi or turn off Wi-Fi-only downloading.</string>
+    <string name="hy_device_error">This device cannot run this model.</string>
+    <string name="hy_translate_error">Translation failed. Please retry with a shorter passage.</string>
+    <string name="hy_delete_message">Delete the multilingual model? Translated reading will need another download. Books, voices and reading progress are kept.</string>
+    <string name="hy_help">Original reading keeps the source text. Other reading languages use HY-MT on this device before speech. The translation model and reading voices are managed separately.</string>
+    <string name="hy_cleanup">Remove old translation packs</string>
+    <string name="hy_cleanup_message">Remove the old ML Kit language packs? HY-MT does not use them. Books, voices and reading progress are kept.</string>
+    <string name="hy_copy_url">Copy model download link</string>
+    <string name="hy_copied">Download link copied</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"マイページ"</string>
+    <string name="models_title">"オフライン翻訳モデル"</string>
+    <string name="models_subtitle">"必要な言語をダウンロードすると、オフラインで翻訳できます。"</string>
+    <string name="models_usage">"使用容量：%1$s"</string>
+    <string name="models_count">"%1$d 個の言語モデルを取得済み"</string>
+    <string name="models_download">"ダウンロード"</string>
+    <string name="models_delete">"削除"</string>
+    <string name="models_retry">"再試行"</string>
+    <string name="models_downloading">"ダウンロード中。接続を維持してください…"</string>
+    <string name="models_deleting">"削除中…"</string>
+    <string name="models_ready">"取得済み"</string>
+    <string name="models_missing">"未取得"</string>
+    <string name="models_english">"個別の取得は不要"</string>
+    <string name="models_chinese">"簡体字と繁体字で共用"</string>
+    <string name="models_wifi">"Wi-Fi 接続時のみ取得"</string>
+    <string name="models_wifi_hint">"変更は新しいダウンロードに適用されます。進行中の取得には影響しません。"</string>
+    <string name="models_delete_title">"%1$sモデルを削除しますか？"</string>
+    <string name="models_delete_message">"この言語の翻訳には再取得が必要になります。本、原文、読書の進捗は保持されます。"</string>
+    <string name="models_busy">"モデルを使用中です。翻訳読み上げを停止して、後でもう一度お試しください。"</string>
+    <string name="models_error">"失敗しました。タップして再試行"</string>
+    <string name="models_approx">"約 30 MB"</string>
+    <string name="models_loading">"モデルを読み込み中…"</string>
+    <string name="models_languages">"言語モデル"</string>
+    <string name="models_info">"英語は中間言語のため個別取得は不要です。翻訳モデルに音声は含まれません。取得前は推定サイズ、取得後はファイル容量を表示します。"</string>
+    <string name="models_back">"戻る"</string>
+    <string name="models_reading_download">"言語をダウンロード中：%1$s"</string>
+    <string name="models_needed">"必要な言語：%1$s、約 %2$d MB。取得後はオフラインで翻訳できます。本文は端末内で処理されます。"</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"Nur Originaltext vorlesen. Übersetzung in diese Sprache nicht verfügbar."</string>
+    <string name="vp_original_unknown">"Sprache nicht erkannt. Wiedergabe an dieser Stelle pausiert."</string>
+    <string name="vp_speaker_hint">"%1$d Stimmen · Karte zum Auswählen, Wiedergabe zum Anhören"</string>
+    <string name="vp_search_speaker">"Stimmennummer suchen"</string>
+    <string name="vp_no_speaker">"Keine passenden Stimmen"</string>
+    <string name="vp_voice_number">"Stimme %1$d"</string>
+    <string name="vp_voice_count">"%1$d Stimmen"</string>
+    <string name="vp_choose_speaker">"Stimme wählen"</string>
+    <string name="vp_original_voice_hint">"Stimme je Sprache wählen. Beim Originaltext erfolgt der Wechsel automatisch."</string>
+</resources>

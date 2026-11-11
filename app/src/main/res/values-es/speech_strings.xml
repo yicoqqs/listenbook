@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"Voces sin conexión"</string>
+    <string name="speech_intro">"Gestiona voces de 15 variantes de idioma: estado, escucha y acciones de paquetes."</string>
+    <string name="speech_hint">"Abre un idioma para ver sus voces. Toca reproducir para escuchar."</string>
+    <string name="speech_ready_count">"%1$d voces sin conexión disponibles"</string>
+    <string name="speech_missing">"No hay voces sin conexión disponibles"</string>
+    <string name="speech_checking">"Comprobando voces…"</string>
+    <string name="speech_builtin">"Incluidas en la app"</string>
+    <string name="speech_builtin_hint">"Se incluyen con la app"</string>
+    <string name="speech_manage">"Gestionar voces"</string>
+    <string name="speech_install">"Descargar voces"</string>
+    <string name="speech_selected">"Seleccionada"</string>
+    <string name="speech_next_play">"Voz preferida guardada para este idioma."</string>
+    <string name="speech_engines">"Elegir motor de voz"</string>
+    <string name="speech_settings">"Ajustes de voz del sistema"</string>
+    <string name="speech_unavailable">"No se puede abrir la gestión de voz. Usa los ajustes del sistema."</string>
+    <string name="speech_no_engines">"No hay un motor de voz del sistema disponible."</string>
+    <string name="speech_info">"Los paquetes de voz generan sonido; los modelos traducen texto. Cada motor gestiona sus descargas y eliminaciones. El estado se actualiza al volver."</string>
+    <string name="speech_home_hint">"Lectura sin conexión, con idiomas y voces según tus necesidades."</string>
+    <string name="speech_not_downloaded">"Paquete de voz sin conexión no descargado"</string>
+    <string name="speech_not_offered">"Los motores actuales no ofrecen una voz sin conexión compatible"</string>
+    <string name="speech_check_engine">"Ver motores de voz"</string>
+    <string name="speech_delete">"Eliminar paquete de voz"</string>
+    <string name="speech_redownload">"Volver a descargar"</string>
+    <string name="speech_engine_instruction">"En la página del motor, elige %1$s para: %2$s."</string>
+    <string name="speech_engine_hint">"La descarga comienza aquí. La eliminación y la nueva descarga requieren la página del motor."</string>
+    <string name="speech_downloading">"Esperando la descarga del motor…"</string>
+    <string name="speech_download_failed">"Los datos de voz aún no están instalados. Revisa la conexión e inténtalo de nuevo."</string>
+    <string name="speech_package_ready">"Disponible"</string>
+</resources>

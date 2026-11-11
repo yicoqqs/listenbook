@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"صفحتي"</string>
+    <string name="models_title">"نماذج الترجمة دون اتصال"</string>
+    <string name="models_subtitle">"نزّل اللغات المطلوبة للترجمة دون اتصال."</string>
+    <string name="models_usage">"المساحة المستخدمة: %1$s"</string>
+    <string name="models_count">"نماذج اللغات المنزّلة: %1$d"</string>
+    <string name="models_download">"تنزيل"</string>
+    <string name="models_delete">"حذف"</string>
+    <string name="models_retry">"إعادة المحاولة"</string>
+    <string name="models_downloading">"جارٍ التنزيل. حافظ على الاتصال…"</string>
+    <string name="models_deleting">"جارٍ الحذف…"</string>
+    <string name="models_ready">"تم التنزيل"</string>
+    <string name="models_missing">"غير منزّل"</string>
+    <string name="models_english">"لا يتطلب تنزيلاً منفصلاً"</string>
+    <string name="models_chinese">"مشترك للصينية المبسطة والتقليدية"</string>
+    <string name="models_wifi">"التنزيل عبر Wi-Fi فقط"</string>
+    <string name="models_wifi_hint">"تسري التغييرات على التنزيلات الجديدة فقط."</string>
+    <string name="models_delete_title">"حذف نموذج %1$s؟"</string>
+    <string name="models_delete_message">"ستحتاج الترجمة بهذه اللغة إلى إعادة التنزيل. ستبقى الكتب والنصوص وتقدم القراءة محفوظة."</string>
+    <string name="models_busy">"النموذج قيد الاستخدام. أوقف القراءة المترجمة مؤقتًا وحاول لاحقًا."</string>
+    <string name="models_error">"فشلت العملية. اضغط للمحاولة"</string>
+    <string name="models_approx">"نحو 30 ميغابايت"</string>
+    <string name="models_loading">"جارٍ تحميل النماذج…"</string>
+    <string name="models_languages">"نماذج اللغات"</string>
+    <string name="models_info">"الإنجليزية لغة وسيطة ولا تتطلب تنزيلاً منفصلاً. النماذج لا تتضمن أصوات القراءة. الحجم تقديري قبل التنزيل ويُقاس بعده."</string>
+    <string name="models_back">"رجوع"</string>
+    <string name="models_reading_download">"جارٍ تنزيل اللغات: %1$s"</string>
+    <string name="models_needed">"مطلوب: %1$s، نحو %2$d ميغابايت. ستعمل الترجمة دون اتصال بعد ذلك. يُعالج النص على هذا الجهاز."</string>
+</resources>

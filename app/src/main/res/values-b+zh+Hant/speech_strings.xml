@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"離線語音"</string>
+    <string name="speech_intro">"管理這 15 種語言的離線音色，查看狀態、試聽及語音包操作入口。"</string>
+    <string name="speech_hint">"點開語言查看音色，點擊播放圖標試聽。"</string>
+    <string name="speech_ready_count">"可用 %1$d 個離線音色"</string>
+    <string name="speech_missing">"尚無可用離線音色"</string>
+    <string name="speech_checking">"正在檢查語音…"</string>
+    <string name="speech_builtin">"App 內置"</string>
+    <string name="speech_builtin_hint">"隨 App 提供"</string>
+    <string name="speech_manage">"管理語音包"</string>
+    <string name="speech_install">"下載語音包"</string>
+    <string name="speech_selected">"已選擇"</string>
+    <string name="speech_next_play">"已保存此語言的首選音色。"</string>
+    <string name="speech_engines">"選擇語音引擎"</string>
+    <string name="speech_settings">"系統語音設置"</string>
+    <string name="speech_unavailable">"無法打開語音管理，請在系統設置中管理語音包。"</string>
+    <string name="speech_no_engines">"手機尚未安裝可用的系統語音引擎。"</string>
+    <string name="speech_info">"語音包負責發聲，翻譯模型負責翻譯。系統語音包由對應引擎下載和刪除，返回後自動刷新安裝狀態。"</string>
+    <string name="speech_home_hint">"離線聽書，按需管理語言與聲音。"</string>
+    <string name="speech_not_downloaded">"未下載離線語音包"</string>
+    <string name="speech_not_offered">"當前引擎未提供對應離線音色"</string>
+    <string name="speech_check_engine">"查看語音引擎"</string>
+    <string name="speech_delete">"刪除語音包"</string>
+    <string name="speech_redownload">"重新下載"</string>
+    <string name="speech_engine_instruction">"請在引擎頁面選擇%1$s，進行“%2$s”操作。"</string>
+    <string name="speech_engine_hint">"下載在本頁發起；刪除和重新下載仍需在引擎頁面處理。"</string>
+    <string name="speech_downloading">"正在等待引擎下載…"</string>
+    <string name="speech_download_failed">"語音包暫未安裝完成，請檢查網絡後重試。"</string>
+    <string name="speech_package_ready">"已可用"</string>
+</resources>

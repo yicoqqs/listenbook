@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"Original reading only; translation to this language is unavailable."</string>
+    <string name="vp_original_unknown">"Unable to identify this passage. Playback paused at this position."</string>
+    <string name="vp_speaker_hint">"%1$d voices · select a card, or tap play to preview"</string>
+    <string name="vp_search_speaker">"Search voice number"</string>
+    <string name="vp_no_speaker">"No matching voices"</string>
+    <string name="vp_voice_number">"Voice %1$d"</string>
+    <string name="vp_voice_count">"%1$d voices"</string>
+    <string name="vp_choose_speaker">"Choose voice"</string>
+    <string name="vp_original_voice_hint">"Choose a voice by language. Original reading switches automatically."</string>
+</resources>

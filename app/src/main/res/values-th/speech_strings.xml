@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"เสียงออฟไลน์"</string>
+    <string name="speech_intro">"จัดการเสียงออฟไลน์ 15 รูปแบบภาษา ดูสถานะ ฟังตัวอย่าง และจัดการแพ็กเสียง"</string>
+    <string name="speech_hint">"เปิดภาษาเพื่อดูเสียง แล้วแตะเล่นเพื่อฟังตัวอย่าง"</string>
+    <string name="speech_ready_count">"มีเสียงออฟไลน์ %1$d เสียง"</string>
+    <string name="speech_missing">"ยังไม่มีเสียงออฟไลน์ที่ใช้ได้"</string>
+    <string name="speech_checking">"กำลังตรวจสอบเสียง…"</string>
+    <string name="speech_builtin">"มีในแอป"</string>
+    <string name="speech_builtin_hint">"มาพร้อมแอป"</string>
+    <string name="speech_manage">"จัดการเสียง"</string>
+    <string name="speech_install">"ดาวน์โหลดเสียง"</string>
+    <string name="speech_selected">"เลือกแล้ว"</string>
+    <string name="speech_next_play">"บันทึกเสียงที่ต้องการสำหรับภาษานี้แล้ว"</string>
+    <string name="speech_engines">"เลือกเอนจินเสียง"</string>
+    <string name="speech_settings">"การตั้งค่าเสียงของระบบ"</string>
+    <string name="speech_unavailable">"เปิดหน้าจัดการเสียงไม่ได้ โปรดจัดการแพ็กเสียงในการตั้งค่าระบบ"</string>
+    <string name="speech_no_engines">"ยังไม่ได้ติดตั้งเอนจินเสียงของระบบที่ใช้ได้"</string>
+    <string name="speech_info">"แพ็กเสียงใช้สร้างเสียงพูด ส่วนโมเดลแปลใช้แปลข้อความ เอนจินแต่ละตัวจัดการการดาวน์โหลดและลบแพ็กเสียง เมื่อกลับมาจะตรวจสอบสถานะใหม่"</string>
+    <string name="speech_home_hint">"อ่านแบบออฟไลน์ จัดการภาษาและเสียงตามต้องการ"</string>
+    <string name="speech_not_downloaded">"ยังไม่ได้ดาวน์โหลดแพ็กเสียงออฟไลน์"</string>
+    <string name="speech_not_offered">"เอนจินปัจจุบันไม่มีเสียงออฟไลน์ที่ตรงกัน"</string>
+    <string name="speech_check_engine">"ดูเอนจินเสียง"</string>
+    <string name="speech_delete">"ลบแพ็กเสียง"</string>
+    <string name="speech_redownload">"ดาวน์โหลดอีกครั้ง"</string>
+    <string name="speech_engine_instruction">"ในหน้าเอนจิน เลือก %1$s เพื่อดำเนินการ: %2$s"</string>
+    <string name="speech_engine_hint">"เริ่มดาวน์โหลดได้ที่นี่ การลบและดาวน์โหลดใหม่ยังต้องทำในหน้าเอนจิน"</string>
+    <string name="speech_downloading">"กำลังรอเอนจินดาวน์โหลด…"</string>
+    <string name="speech_download_failed">"ยังติดตั้งข้อมูลเสียงไม่เสร็จ โปรดตรวจสอบการเชื่อมต่อแล้วลองใหม่"</string>
+    <string name="speech_package_ready">"พร้อมใช้"</string>
+</resources>

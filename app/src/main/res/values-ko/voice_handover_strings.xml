@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_switch_loading">"새 음성을 준비 중입니다. 읽기는 계속됩니다."</string>
+    <string name="voice_switch_ready">"준비되었습니다. 문장 사이에서 전환합니다."</string>
+    <string name="voice_switch_failed">"전환하지 못했습니다. 이전 음성을 유지합니다."</string>
+</resources>

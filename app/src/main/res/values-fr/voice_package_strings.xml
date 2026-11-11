@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"Importer un fichier"</string>
+    <string name="vp_address">"Télécharger via URL"</string>
+    <string name="vp_hint">"Paquets sherpa-onnx VITS / Kokoro ou Matcha complets (.zip, .tar.bz2, .tar.gz, .tar). La langue et les fichiers requis sont vérifiés. Un fichier .pt ou .onnx seul ne suffit pas."</string>
+    <string name="vp_extract">"Extraction du paquet vocal…"</string>
+    <string name="vp_validate">"Vérification de la langue et test du modèle…"</string>
+    <string name="vp_done">"Paquet vocal prêt"</string>
+    <string name="vp_error_language">"Paquet invalide : la langue ne correspond pas."</string>
+    <string name="vp_error_unknown">"Paquet invalide : impossible de vérifier la langue du modèle."</string>
+    <string name="vp_error_invalid">"Paquet invalide ou non pris en charge. Utilisez un paquet VITS / Kokoro ou Matcha compatible."</string>
+    <string name="vp_error_incomplete">"Paquet invalide : modèle ou dictionnaires requis manquants."</string>
+    <string name="vp_error_duplicate">"Ce paquet vocal a déjà été importé."</string>
+    <string name="vp_error_storage">"Espace insuffisant ou paquet trop volumineux."</string>
+    <string name="vp_error_url">"Saisissez un lien HTTPS direct vers le paquet vocal complet."</string>
+    <string name="vp_cancelled">"Importation annulée"</string>
+    <string name="vp_speaker">"Voix %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"Supprimer ce paquet et toutes ses voix de l’application ?"</string>
+    <string name="vp_source">"Paquet vocal importé"</string>
+    <string name="vp_title">"Choisir une voix"</string>
+    <string name="vp_reading">"Lecture avec une voix hors ligne"</string>
+    <string name="vp_in_use">"Ce paquet est utilisé. Fermez le lecteur ou arrêtez l’aperçu avant de le supprimer."</string>
+    <string name="vp_deleted">"Paquet vocal supprimé"</string>
+    <string name="vp_auto">"Les langues sont détectées automatiquement après importation. Un paquet multilingue est stocké une seule fois."</string>
+    <string name="vp_error_graph">"Types de données internes incompatibles. Essayez une autre version du modèle, par exemple sans FP16."</string>
+    <string name="vp_copy_url">"Copier le lien de téléchargement des voix"</string>
+</resources>

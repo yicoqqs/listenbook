@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_switch_loading">"Menyiapkan suara baru; pembacaan berlanjut."</string>
+    <string name="voice_switch_ready">"Suara siap; beralih di antara kalimat."</string>
+    <string name="voice_switch_failed">"Gagal mengganti suara. Suara sebelumnya dipertahankan."</string>
+</resources>

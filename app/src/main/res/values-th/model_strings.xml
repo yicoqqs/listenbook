@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="models_my">"ของฉัน"</string>
+    <string name="models_title">"โมเดลแปลภาษาออฟไลน์"</string>
+    <string name="models_subtitle">"ดาวน์โหลดภาษาที่ต้องการเพื่อแปลแบบออฟไลน์"</string>
+    <string name="models_usage">"พื้นที่ที่ใช้: %1$s"</string>
+    <string name="models_count">"ดาวน์โหลดแล้ว %1$d โมเดลภาษา"</string>
+    <string name="models_download">"ดาวน์โหลด"</string>
+    <string name="models_delete">"ลบ"</string>
+    <string name="models_retry">"ลองอีกครั้ง"</string>
+    <string name="models_downloading">"กำลังดาวน์โหลด โปรดเชื่อมต่อเครือข่ายไว้…"</string>
+    <string name="models_deleting">"กำลังลบ…"</string>
+    <string name="models_ready">"ดาวน์โหลดแล้ว"</string>
+    <string name="models_missing">"ยังไม่ดาวน์โหลด"</string>
+    <string name="models_english">"ไม่ต้องดาวน์โหลดแยก"</string>
+    <string name="models_chinese">"ใช้ร่วมกันสำหรับจีนตัวย่อและตัวเต็ม"</string>
+    <string name="models_wifi">"ดาวน์โหลดผ่าน Wi-Fi เท่านั้น"</string>
+    <string name="models_wifi_hint">"การเปลี่ยนแปลงมีผลกับการดาวน์โหลดใหม่เท่านั้น"</string>
+    <string name="models_delete_title">"ลบโมเดล%1$sหรือไม่"</string>
+    <string name="models_delete_message">"การแปลที่ใช้ภาษานี้จะต้องดาวน์โหลดใหม่ หนังสือ ข้อความต้นฉบับ และความคืบหน้าจะยังอยู่"</string>
+    <string name="models_busy">"โมเดลกำลังใช้งาน โปรดหยุดการอ่านคำแปลชั่วคราวแล้วลองใหม่"</string>
+    <string name="models_error">"ไม่สำเร็จ แตะเพื่อลองอีกครั้ง"</string>
+    <string name="models_approx">"ประมาณ 30 MB"</string>
+    <string name="models_loading">"กำลังโหลดโมเดล…"</string>
+    <string name="models_languages">"โมเดลภาษา"</string>
+    <string name="models_info">"ภาษาอังกฤษเป็นภาษากลางและไม่ต้องดาวน์โหลดแยก โมเดลไม่รวมเสียงอ่าน ขนาดก่อนดาวน์โหลดเป็นค่าประมาณ และแสดงขนาดไฟล์จริงหลังดาวน์โหลด"</string>
+    <string name="models_back">"กลับ"</string>
+    <string name="models_reading_download">"กำลังดาวน์โหลดภาษาออฟไลน์: %1$s"</string>
+    <string name="models_needed">"ต้องดาวน์โหลด: %1$s ประมาณ %2$d MB จากนั้นแปลแบบออฟไลน์ได้ ข้อความประมวลผลบนอุปกรณ์นี้"</string>
+</resources>

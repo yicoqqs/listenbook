@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"Только чтение оригинала. Перевод на этот язык недоступен."</string>
+    <string name="vp_original_unknown">"Не удалось определить язык. Чтение приостановлено на этом месте."</string>
+    <string name="vp_speaker_hint">"%1$d голосов · нажмите карточку для выбора или кнопку воспроизведения для прослушивания"</string>
+    <string name="vp_search_speaker">"Поиск по номеру голоса"</string>
+    <string name="vp_no_speaker">"Подходящих голосов нет"</string>
+    <string name="vp_voice_number">"Голос %1$d"</string>
+    <string name="vp_voice_count">"Голосов: %1$d"</string>
+    <string name="vp_choose_speaker">"Выбрать голос"</string>
+    <string name="vp_original_voice_hint">"Выберите голос для языка. При чтении оригинала голоса переключаются автоматически."</string>
+</resources>

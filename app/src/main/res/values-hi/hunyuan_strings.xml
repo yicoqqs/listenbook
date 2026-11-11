@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">एक मॉडल समर्थित भाषाओं में सीधे अनुवाद करता है। डाउनलोड के बाद पूरी तरह ऑफलाइन।</string>
+    <string name="hy_languages">समर्थित भाषाएँ</string>
+    <string name="hy_import">मॉडल आयात करें</string>
+    <string name="hy_checking">मॉडल की जाँच हो रही है…</string>
+    <string name="hy_invalid_model">यह फ़ाइल समर्थित मॉडल से मेल नहीं खाती। दिखाया गया आधिकारिक संस्करण आयात करें।</string>
+    <string name="hy_network_error">डाउनलोड विफल। कनेक्शन जाँचें या मॉडल फ़ाइल आयात करें।</string>
+    <string name="hy_cancelled">रद्द किया गया</string>
+    <string name="hy_wifi_required">Wi-Fi से जुड़ें या केवल Wi-Fi डाउनलोड बंद करें।</string>
+    <string name="hy_device_error">यह डिवाइस इस मॉडल को नहीं चला सकता।</string>
+    <string name="hy_translate_error">अनुवाद विफल। छोटे पाठ के साथ फिर प्रयास करें।</string>
+    <string name="hy_delete_message">हटाने के बाद अनुवाद के लिए मॉडल फिर डाउनलोड करना होगा। किताबें, आवाज़ें और पढ़ने की प्रगति बनी रहेंगी।</string>
+    <string name="hy_help">मूल पठन पाठ को नहीं बदलता। अन्य भाषाओं में डिवाइस पर HY-MT से अनुवाद करके पढ़ा जाता है। मॉडल और आवाज़ें अलग प्रबंधित हैं।</string>
+    <string name="hy_cleanup">पुराने पैक हटाएँ</string>
+    <string name="hy_cleanup_message">पुराने ML Kit पैक हटाएँ? HY-MT उनका उपयोग नहीं करता। किताबें, आवाज़ें और पढ़ने की प्रगति बनी रहेंगी।</string>
+    <string name="hy_copy_url">मॉडल डाउनलोड लिंक कॉपी करें</string>
+    <string name="hy_copied">डाउनलोड लिंक कॉपी किया गया</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

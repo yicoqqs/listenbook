@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_switch_loading">"Préparation de la nouvelle voix ; la lecture continue."</string>
+    <string name="voice_switch_ready">"Voix prête ; changement entre deux phrases."</string>
+    <string name="voice_switch_failed">"Changement impossible. La voix précédente est conservée."</string>
+</resources>

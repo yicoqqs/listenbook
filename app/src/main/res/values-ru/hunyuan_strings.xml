@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">Одна модель переводит напрямую между поддерживаемыми языками, полностью офлайн после загрузки.</string>
+    <string name="hy_languages">Поддерживаемые языки</string>
+    <string name="hy_import">Импорт модели</string>
+    <string name="hy_checking">Проверка модели…</string>
+    <string name="hy_invalid_model">Файл не соответствует поддерживаемой модели. Импортируйте указанную официальную версию.</string>
+    <string name="hy_network_error">Ошибка загрузки. Проверьте сеть или импортируйте файл модели.</string>
+    <string name="hy_cancelled">Отменено</string>
+    <string name="hy_wifi_required">Подключитесь к Wi-Fi или отключите загрузку только по Wi-Fi.</string>
+    <string name="hy_device_error">Это устройство не может запустить модель.</string>
+    <string name="hy_translate_error">Ошибка перевода. Повторите с более коротким текстом.</string>
+    <string name="hy_delete_message">После удаления потребуется загрузить модель заново. Книги, голоса и позиция чтения сохранятся.</string>
+    <string name="hy_help">Оригинал читается без перевода. Другие языки используют HY-MT на устройстве перед озвучиванием. Модель и голоса управляются отдельно.</string>
+    <string name="hy_cleanup">Удалить старые пакеты</string>
+    <string name="hy_cleanup_message">Удалить старые пакеты ML Kit? HY-MT их не использует. Книги, голоса и позиция чтения сохранятся.</string>
+    <string name="hy_copy_url">Копировать ссылку на модель</string>
+    <string name="hy_copied">Ссылка для загрузки скопирована</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

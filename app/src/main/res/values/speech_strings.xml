@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"Offline voices"</string>
+    <string name="speech_intro">"Manage offline voices for these 15 language variants: status, previews and voice package actions."</string>
+    <string name="speech_hint">"Expand a language to see voices. Tap play to preview."</string>
+    <string name="speech_ready_count">"%1$d offline voices available"</string>
+    <string name="speech_missing">"No offline voice available"</string>
+    <string name="speech_checking">"Checking voices…"</string>
+    <string name="speech_builtin">"Built into the app"</string>
+    <string name="speech_builtin_hint">"Included with the app"</string>
+    <string name="speech_manage">"Manage voices"</string>
+    <string name="speech_install">"Download voices"</string>
+    <string name="speech_selected">"Selected"</string>
+    <string name="speech_next_play">"Preferred voice saved for this language."</string>
+    <string name="speech_engines">"Choose a speech engine"</string>
+    <string name="speech_settings">"System speech settings"</string>
+    <string name="speech_unavailable">"Cannot open voice management. Manage voice packages in system settings."</string>
+    <string name="speech_no_engines">"No usable system speech engine is installed."</string>
+    <string name="speech_info">"Voice packages produce speech; translation models translate text. System voice packages are downloaded and deleted by their engine. Installation status refreshes when you return."</string>
+    <string name="speech_home_hint">"Offline reading, with languages and voices managed as needed."</string>
+    <string name="speech_not_downloaded">"Offline voice package not downloaded"</string>
+    <string name="speech_not_offered">"No matching offline voice is offered by the current engines"</string>
+    <string name="speech_check_engine">"View speech engines"</string>
+    <string name="speech_delete">"Delete voice package"</string>
+    <string name="speech_redownload">"Download again"</string>
+    <string name="speech_engine_instruction">"In the engine page, choose %1$s to perform: %2$s."</string>
+    <string name="speech_engine_hint">"Downloads start here. Deletion and re-downloads still require the engine page."</string>
+    <string name="speech_downloading">"Waiting for the engine to download…"</string>
+    <string name="speech_download_failed">"Voice data is not installed yet. Check your connection and try again."</string>
+    <string name="speech_package_ready">"Available"</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_switch_loading">"กำลังเตรียมเสียงใหม่ การอ่านยังดำเนินต่อ"</string>
+    <string name="voice_switch_ready">"เสียงพร้อมแล้ว จะสลับระหว่างประโยค"</string>
+    <string name="voice_switch_failed">"เปลี่ยนเสียงไม่ได้ ยังคงใช้เสียงเดิม"</string>
+</resources>

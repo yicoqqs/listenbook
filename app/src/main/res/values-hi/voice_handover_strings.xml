@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_switch_loading">"नई आवाज़ तैयार हो रही है; पढ़ना जारी है।"</string>
+    <string name="voice_switch_ready">"आवाज़ तैयार है; वाक्यों के बीच बदलेंगे।"</string>
+    <string name="voice_switch_failed">"आवाज़ नहीं बदल सकी। पिछली आवाज़ रखी गई है।"</string>
+</resources>

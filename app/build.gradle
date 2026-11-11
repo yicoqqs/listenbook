@@ -1,0 +1,50 @@
+plugins { id 'com.android.application' }
+
+// Private signing material is local-only. Missing keys must never produce an unsigned release.
+def releaseSigningFile = rootProject.file(findProperty('releaseSigningPropertiesFile') ?: '.tools/release-signing/keystore.properties')
+def releaseSigning = new Properties()
+if (releaseSigningFile.isFile()) {
+    releaseSigningFile.withInputStream { releaseSigning.load(it) }
+    ['storeFile', 'storeType', 'keyAlias', 'storePassword', 'keyPassword'].each { name ->
+        if (!releaseSigning.getProperty(name)?.trim()) throw new GradleException("Release signing property is missing: ${name}")
+    }
+    if (!rootProject.file(releaseSigning.getProperty('storeFile')).isFile()) throw new GradleException('Release signing keystore is missing. Restore the existing keystore; do not generate a replacement.')
+}
+gradle.taskGraph.whenReady { graph ->
+    if (!releaseSigningFile.isFile() && graph.allTasks.any { it.project == project && it.name.toLowerCase(Locale.ROOT).contains('release') }) {
+        throw new GradleException('Release signing is not configured. Restore the private signing files; debug signing is never used for release.')
+    }
+}
+android {
+    signingConfigs {
+        release {
+            if (releaseSigningFile.isFile()) {
+                storeFile rootProject.file(releaseSigning.getProperty('storeFile'))
+                storeType releaseSigning.getProperty('storeType')
+                storePassword releaseSigning.getProperty('storePassword')
+                keyAlias releaseSigning.getProperty('keyAlias')
+                keyPassword releaseSigning.getProperty('keyPassword')
+            }
+        }
+    }
+    buildTypes {
+        debug { signingConfig signingConfigs.debug }
+        release {
+            signingConfig signingConfigs.release
+            debuggable false
+            jniDebuggable false
+            minifyEnabled false
+        }
+    }
+    namespace 'com.voicetxt.reader'
+    compileSdk 35
+    // Ship the runtime for user-imported voices, without any bundled speech models.
+    sourceSets.main.assets.srcDirs = ['src/main/system-assets']
+    sourceSets.main.jniLibs.srcDirs = ['src/main/jniLibs']
+    defaultConfig { applicationId 'com.voicetxt.reader'; testApplicationId 'com.voicetxt.reader.tests'; testInstrumentationRunner 'com.voicetxt.reader.TranslationProbe'; minSdk 26; targetSdk 35; ndk { abiFilters 'arm64-v8a' }; versionCode 3; versionName '1.0.1' }
+}
+
+dependencies {
+    // Override Compress's transitive 3.16.0: CVE-2025-48924 fixed in 3.18.0.
+    implementation('org.apache.commons:commons-lang3:3.18.0') { because 'Fix CVE-2025-48924 (uncontrolled recursion in ClassUtils)' }
+    implementation files("libs/sherpa-classes.jar"); implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"; implementation "com.google.mlkit:translate:17.0.3"; implementation "com.google.mlkit:language-id:17.0.6"; implementation "org.apache.commons:commons-compress:1.27.1" }

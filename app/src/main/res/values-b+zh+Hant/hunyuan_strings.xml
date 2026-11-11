@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">一個模型支援多語言直接互譯，下載後完全離線使用。</string>
+    <string name="hy_languages">支援語言</string>
+    <string name="hy_import">匯入模型</string>
+    <string name="hy_checking">正在檢查模型…</string>
+    <string name="hy_invalid_model">檔案與支援的模型不符，請匯入此頁面對應的官方版本。</string>
+    <string name="hy_network_error">下載失敗，請檢查網路後重試，或匯入模型檔案。</string>
+    <string name="hy_cancelled">已取消</string>
+    <string name="hy_wifi_required">請連接 Wi-Fi，或關閉僅透過 Wi-Fi 下載。</string>
+    <string name="hy_device_error">此裝置暫不支援執行此模型。</string>
+    <string name="hy_translate_error">翻譯失敗，請重試或縮短文字。</string>
+    <string name="hy_delete_message">刪除多語言模型後，翻譯閱讀需要重新下載。書籍、音色和閱讀進度會保留。</string>
+    <string name="hy_help">原文朗讀保留原文；選擇其他閱讀語言時，混元在手機上直接翻譯後再朗讀。翻譯模型與朗讀音色分開管理。</string>
+    <string name="hy_cleanup">清理舊翻譯包</string>
+    <string name="hy_cleanup_message">刪除舊的 ML Kit 語言包？混元不再使用這些檔案，書籍、音色和閱讀進度會保留。</string>
+    <string name="hy_copy_url">複製模型下載連結</string>
+    <string name="hy_copied">下載連結已複製</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

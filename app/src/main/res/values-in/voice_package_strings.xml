@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"Impor berkas"</string>
+    <string name="vp_address">"Unduh dari URL"</string>
+    <string name="vp_hint">"Paket sherpa-onnx VITS / Kokoro atau Matcha lengkap (.zip, .tar.bz2, .tar.gz, .tar). Bahasa dan berkas akan diperiksa. Berkas .pt atau .onnx saja tidak cukup."</string>
+    <string name="vp_extract">"Mengekstrak paket suara…"</string>
+    <string name="vp_validate">"Memeriksa bahasa dan menguji model…"</string>
+    <string name="vp_done">"Paket suara siap"</string>
+    <string name="vp_error_language">"Paket tidak valid: bahasa tidak sesuai."</string>
+    <string name="vp_error_unknown">"Paket tidak valid: bahasa model tidak dapat diverifikasi."</string>
+    <string name="vp_error_invalid">"Paket tidak valid atau tidak didukung. Gunakan paket VITS / Kokoro atau Matcha yang kompatibel."</string>
+    <string name="vp_error_incomplete">"Paket tidak valid: berkas model atau kamus wajib tidak ada."</string>
+    <string name="vp_error_duplicate">"Paket suara ini sudah diimpor."</string>
+    <string name="vp_error_storage">"Ruang penyimpanan kurang atau paket terlalu besar."</string>
+    <string name="vp_error_url">"Masukkan tautan HTTPS langsung ke paket lengkap."</string>
+    <string name="vp_cancelled">"Impor dibatalkan"</string>
+    <string name="vp_speaker">"Suara %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"Hapus paket ini dan semua suaranya dari aplikasi?"</string>
+    <string name="vp_source">"Paket suara yang diimpor"</string>
+    <string name="vp_title">"Pilih suara"</string>
+    <string name="vp_reading">"Membaca dengan suara offline"</string>
+    <string name="vp_in_use">"Paket ini sedang digunakan. Keluar dari pembaca atau hentikan pratinjau sebelum menghapusnya."</string>
+    <string name="vp_deleted">"Paket suara dihapus"</string>
+    <string name="vp_auto">"Bahasa dideteksi otomatis setelah impor. Paket multibahasa hanya disimpan sekali."</string>
+    <string name="vp_error_graph">"Jenis data internal model tidak kompatibel. Coba versi lain, misalnya paket non-FP16."</string>
+    <string name="vp_copy_url">"Salin tautan unduhan paket suara"</string>
+</resources>

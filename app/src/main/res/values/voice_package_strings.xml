@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"Import file"</string>
+    <string name="vp_address">"Download from URL"</string>
+    <string name="vp_hint">"Import complete sherpa-onnx VITS / Kokoro or Matcha packages (.zip, .tar.bz2, .tar.gz, .tar). Model language and required files are verified automatically. A .pt or .onnx file alone is not a complete package."</string>
+    <string name="vp_extract">"Extracting voice package…"</string>
+    <string name="vp_validate">"Checking language and testing the model…"</string>
+    <string name="vp_done">"Voice package ready"</string>
+    <string name="vp_error_language">"Invalid voice package: its language does not match this language."</string>
+    <string name="vp_error_unknown">"Invalid voice package: the model language cannot be verified."</string>
+    <string name="vp_error_invalid">"Invalid or unsupported voice package. Use a compatible VITS / Kokoro or Matcha package."</string>
+    <string name="vp_error_incomplete">"Invalid voice package: required model files or dictionaries are missing."</string>
+    <string name="vp_error_duplicate">"This voice package has already been imported."</string>
+    <string name="vp_error_storage">"Not enough storage, or the voice package is too large."</string>
+    <string name="vp_error_url">"Enter a direct HTTPS link to a complete voice package."</string>
+    <string name="vp_cancelled">"Import cancelled"</string>
+    <string name="vp_speaker">"Voice %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"Delete this voice package? All its voices will be removed from the app."</string>
+    <string name="vp_source">"Imported voice package"</string>
+    <string name="vp_title">"Voices"</string>
+    <string name="vp_reading">"Offline voice reading"</string>
+    <string name="vp_in_use">"This voice package is in use. Exit the reader or stop previewing before deleting it."</string>
+    <string name="vp_deleted">"Voice package deleted"</string>
+    <string name="vp_auto">"Languages are detected automatically after import. A multilingual package is stored only once."</string>
+    <string name="vp_error_graph">"The model has incompatible internal data types. Try another model version, such as the non-FP16 package."</string>
+    <string name="vp_copy_url">"Copy voice package download URL"</string>
+</resources>

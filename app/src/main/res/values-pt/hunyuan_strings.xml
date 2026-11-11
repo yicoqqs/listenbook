@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hy_intro">Um modelo traduz diretamente os idiomas compatíveis, totalmente offline após o download.</string>
+    <string name="hy_languages">Idiomas compatíveis</string>
+    <string name="hy_import">Importar modelo</string>
+    <string name="hy_checking">Verificando modelo…</string>
+    <string name="hy_invalid_model">O arquivo não corresponde ao modelo compatível. Importe a versão oficial indicada.</string>
+    <string name="hy_network_error">Falha no download. Verifique a conexão ou importe o arquivo do modelo.</string>
+    <string name="hy_cancelled">Cancelado</string>
+    <string name="hy_wifi_required">Conecte ao Wi-Fi ou desative downloads apenas por Wi-Fi.</string>
+    <string name="hy_device_error">Este dispositivo não pode executar o modelo.</string>
+    <string name="hy_translate_error">Falha na tradução. Tente um texto mais curto.</string>
+    <string name="hy_delete_message">Após excluir o modelo, será necessário baixá-lo para traduzir. Livros, vozes e progresso serão mantidos.</string>
+    <string name="hy_help">A leitura original mantém o texto. Outros idiomas usam HY-MT neste dispositivo antes da leitura. Modelo e vozes são gerenciados separadamente.</string>
+    <string name="hy_cleanup">Remover pacotes antigos</string>
+    <string name="hy_cleanup_message">Excluir os pacotes ML Kit antigos? HY-MT não os usa. Livros, vozes e progresso serão mantidos.</string>
+    <string name="hy_copy_url">Copiar link do modelo</string>
+    <string name="hy_copied">Link de download copiado</string>
+    <string name="hy_missing_hint">@string/models_missing</string>
+    <string name="hy_ready_hint">@string/models_ready</string>
+</resources>

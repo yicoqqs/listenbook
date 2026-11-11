@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"قراءة النص الأصلي فقط. الترجمة إلى هذه اللغة غير متاحة."</string>
+    <string name="vp_original_unknown">"تعذر تحديد اللغة. تم إيقاف القراءة مؤقتًا عند هذا الموضع."</string>
+    <string name="vp_speaker_hint">"%1$d أصوات · اضغط البطاقة للاختيار أو زر التشغيل للاستماع"</string>
+    <string name="vp_search_speaker">"ابحث برقم الصوت"</string>
+    <string name="vp_no_speaker">"لا توجد أصوات مطابقة"</string>
+    <string name="vp_voice_number">"الصوت %1$d"</string>
+    <string name="vp_voice_count">"%1$d أصوات"</string>
+    <string name="vp_choose_speaker">"اختيار الصوت"</string>
+    <string name="vp_original_voice_hint">"اختر صوتًا لكل لغة. تتبدل الأصوات تلقائيًا عند قراءة النص الأصلي."</string>
+</resources>

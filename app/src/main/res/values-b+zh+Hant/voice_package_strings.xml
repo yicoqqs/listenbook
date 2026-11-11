@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_import">"匯入檔案"</string>
+    <string name="vp_address">"透過網址下載"</string>
+    <string name="vp_hint">"支援完整的 sherpa-onnx VITS / Kokoro、Matcha 語音包（.zip、.tar.bz2、.tar.gz、.tar）。會檢查模型語言與必要檔案。單獨的 .pt 或 .onnx 檔案不是完整語音包。"</string>
+    <string name="vp_extract">"正在解壓縮語音包…"</string>
+    <string name="vp_validate">"正在檢查語言並試執行模型…"</string>
+    <string name="vp_done">"語音包已可用"</string>
+    <string name="vp_error_language">"無效語音包：模型語言與所選語言不符。"</string>
+    <string name="vp_error_unknown">"無效語音包：無法確認模型支援的語言。"</string>
+    <string name="vp_error_invalid">"語音包無效或格式不支援，請使用相容的 VITS / Kokoro、Matcha 語音包。"</string>
+    <string name="vp_error_incomplete">"無效語音包：缺少模型、詞典等必要檔案。"</string>
+    <string name="vp_error_duplicate">"此語音包已匯入，無需重複新增。"</string>
+    <string name="vp_error_storage">"儲存空間不足或語音包過大。"</string>
+    <string name="vp_error_url">"請輸入完整語音包的 HTTPS 直接下載網址。"</string>
+    <string name="vp_cancelled">"已取消匯入"</string>
+    <string name="vp_speaker">"音色 %1$d / %2$d"</string>
+    <string name="vp_delete_confirmation">"刪除此語音包？包中的所有音色將從 App 移除。"</string>
+    <string name="vp_source">"已匯入語音包"</string>
+    <string name="vp_title">"音色選擇"</string>
+    <string name="vp_reading">"離線音色朗讀"</string>
+    <string name="vp_in_use">"語音包正在使用，請退出閱讀或停止試聽後再刪除。"</string>
+    <string name="vp_deleted">"已刪除語音包"</string>
+    <string name="vp_auto">"匯入後自動辨識語言並分類，多語言包只儲存一份。"</string>
+    <string name="vp_error_graph">"模型內部資料類型不相容，無法載入。請更換模型版本，例如非 FP16 語音包。"</string>
+    <string name="vp_copy_url">"複製語音包下載網址"</string>
+</resources>

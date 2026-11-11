@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vp_original_only">"Lecture du texte original uniquement. Traduction vers cette langue indisponible."</string>
+    <string name="vp_original_unknown">"Langue non identifiée. Lecture suspendue à cet endroit."</string>
+    <string name="vp_speaker_hint">"%1$d voix · touchez une carte pour choisir, lecture pour écouter"</string>
+    <string name="vp_search_speaker">"Rechercher un numéro de voix"</string>
+    <string name="vp_no_speaker">"Aucune voix correspondante"</string>
+    <string name="vp_voice_number">"Voix %1$d"</string>
+    <string name="vp_voice_count">"%1$d voix"</string>
+    <string name="vp_choose_speaker">"Choisir une voix"</string>
+    <string name="vp_original_voice_hint">"Choisissez une voix par langue. La lecture originale bascule automatiquement."</string>
+</resources>

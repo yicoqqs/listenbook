@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_title">"ऑफ़लाइन आवाज़ें"</string>
+    <string name="speech_intro">"15 भाषा रूपों की ऑफ़लाइन आवाज़ों की स्थिति देखें, नमूना सुनें और वॉइस पैक प्रबंधित करें।"</string>
+    <string name="speech_hint">"आवाज़ें देखने के लिए भाषा खोलें। नमूना सुनने के लिए प्ले दबाएँ।"</string>
+    <string name="speech_ready_count">"%1$d ऑफ़लाइन आवाज़ें उपलब्ध"</string>
+    <string name="speech_missing">"कोई ऑफ़लाइन आवाज़ उपलब्ध नहीं"</string>
+    <string name="speech_checking">"आवाज़ें जाँची जा रही हैं…"</string>
+    <string name="speech_builtin">"ऐप में शामिल"</string>
+    <string name="speech_builtin_hint">"ऐप के साथ उपलब्ध"</string>
+    <string name="speech_manage">"आवाज़ें प्रबंधित करें"</string>
+    <string name="speech_install">"आवाज़ें डाउनलोड करें"</string>
+    <string name="speech_selected">"चुनी गई"</string>
+    <string name="speech_next_play">"इस भाषा की पसंदीदा आवाज़ सेव की गई।"</string>
+    <string name="speech_engines">"वॉइस इंजन चुनें"</string>
+    <string name="speech_settings">"सिस्टम की वॉइस सेटिंग"</string>
+    <string name="speech_unavailable">"वॉइस प्रबंधन नहीं खुला। सिस्टम सेटिंग में वॉइस पैक प्रबंधित करें।"</string>
+    <string name="speech_no_engines">"कोई उपयोग योग्य सिस्टम वॉइस इंजन इंस्टॉल नहीं है।"</string>
+    <string name="speech_info">"वॉइस पैक आवाज़ बनाते हैं और अनुवाद मॉडल पाठ का अनुवाद करते हैं। सिस्टम वॉइस पैक उनके इंजन से डाउनलोड या हटाए जाते हैं। लौटने पर स्थिति फिर जाँची जाती है।"</string>
+    <string name="speech_home_hint">"ज़रूरत के अनुसार भाषाओं और आवाज़ों के साथ ऑफ़लाइन पढ़ना।"</string>
+    <string name="speech_not_downloaded">"ऑफ़लाइन वॉइस पैक डाउनलोड नहीं हुआ"</string>
+    <string name="speech_not_offered">"मौजूदा इंजन में इस भाषा की ऑफ़लाइन आवाज़ नहीं है"</string>
+    <string name="speech_check_engine">"वॉइस इंजन देखें"</string>
+    <string name="speech_delete">"वॉइस पैक हटाएँ"</string>
+    <string name="speech_redownload">"फिर डाउनलोड करें"</string>
+    <string name="speech_engine_instruction">"इंजन पेज में %1$s चुनें और यह काम करें: %2$s।"</string>
+    <string name="speech_engine_hint">"डाउनलोड यहीं शुरू होता है। हटाने और फिर डाउनलोड करने के लिए इंजन पेज ज़रूरी है।"</string>
+    <string name="speech_downloading">"इंजन के डाउनलोड का इंतज़ार है…"</string>
+    <string name="speech_download_failed">"वॉइस डेटा अभी इंस्टॉल नहीं हुआ। कनेक्शन जाँचें और फिर कोशिश करें।"</string>
+    <string name="speech_package_ready">"उपलब्ध"</string>
+</resources>
